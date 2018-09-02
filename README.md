@@ -1,0 +1,2 @@
+# decadentka.github.io
+Хостинг
