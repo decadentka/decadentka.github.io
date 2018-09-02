@@ -15,8 +15,10 @@
 	width:500px;
 }
 
-.pic .pic__img {
-    max-width:125px;
+img.item__img {
+    max-width: 125px;
+    max-height: 115px;
+    padding: 10px 10px 10px 0;
 }
 
 .item-features{
