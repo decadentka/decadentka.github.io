@@ -78,7 +78,7 @@ h1{
 
 .cart__companies__tabs__wrapper:after{
 	content: '';
-    display: block;
+        display: block;
 	width: 100%;
 	height: 3px;
 	border-bottom: solid 1px #d2d2d2
@@ -113,12 +113,12 @@ h1{
 
 .cart__companies__tab:after{
 	content: '';
-    display: block;
+        display: block;
 	width: 100%;
 	height: 2px;
 	border-bottom: solid 1.5px transparent;
 	position: relative;
-    top: 4px;
+        top: 4px;
 	transition:.5s;
 }
 
@@ -162,22 +162,6 @@ h1{
 	font-weight:normal;
 	text-align:left;
 }
-/*
-.active_up:after{
-	content:url('img/arrow-down-copy-6.svg');
-	width:20px;
-	height:10px;
-	margin-left:10px;
-}
-
-.active_down:after{
-	content:url('img/arrow-down-copy-6.svg');
-	width:20px;
-	height:10px;
-	background: #ccc ;
-	margin-left:10px;
-	transform:rotate(180deg);
-}*/
 
 .cart__companies__list__body__row{
 	border-bottom: solid 0.5px #d8d8d8;	
@@ -189,14 +173,9 @@ h1{
 	height:90px;
 }
 
-.cart__companies__list__body__row td:last-child{
-/*	width:130px;*/
-}
-
 .cart__companies__list__body__row td p{
 	margin:0;
-	padding:0;
-	
+	padding:0;	
 }
 
 .cart__companies__list__body{
@@ -207,8 +186,7 @@ h1{
 	font-stretch: normal;
 	line-height: 1.1;
 	letter-spacing: normal;
-	color: #292929;
-	
+	color: #292929;	
 }
 
 .cart__company__in-tender{
@@ -228,25 +206,13 @@ h1{
 	padding:3px 15px;
 	position:relative;
 }
-/*
-.cart__company__in-tender label:before{	
-	content:url('img/arrow-down-copy-6.svg');
-	position: absolute;
-    left: 6px;
-    bottom: -8px;
-	display:block;
-}
-
-.cart__company__in-tender input[type="checkbox"]:checked label:before{
-	display:none;
-}*/
 
 .cart__company__in-tender svg{	
 	width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 6px;
-    bottom: -8px;
+        height: 30px;
+        position: absolute;
+    	left: 6px;
+    	bottom: -8px;
 	display: none;
 }
 
@@ -255,19 +221,13 @@ h1{
 }
 
 td.cart__company__name{
-	
-}
-
-td.cart__company__name{
-/*	*/
 	font-family: ProximaNova-Bold;
 	font-size: 20px;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 1.1;
 	letter-spacing: normal;
-	color: #292929;	
-/*	*/
+	color: #292929;
 	width:210px;
 }
 
@@ -276,8 +236,7 @@ td.cart__company__name{
 	position: relative;
 }
 
-.cart__company__pro{
-	
+.cart__company__pro{	
 	position: relative;
 }
 
@@ -300,7 +259,7 @@ td.cart__company__name{
 .cart__companies__list__head__column:first-child:before{
 	content:'В тендере';
 	position: absolute;
-    margin-top:-10px;
+    	margin-top:-10px;
 }
 
 .cart__company__name p:after{
@@ -343,11 +302,6 @@ td.cart__company__age{
 	width:110px;
 }
 
-/*
-.cart__company__age:after {
-	content:' лет';
-}*/
-
 table.tablesorter thead tr .header:after {
 	content: url('img/arrow-up-copy-6.svg');
 	padding-left:5px;
@@ -360,13 +314,10 @@ table.tablesorter thead tr .headerSortUp:after {
 	content: url('img/arrow-up-copy-6.svg');
 	padding-left:5px;
 	visibility:visible;
-/*	background-repeat: no-repeat;
-	background-position: center center;*/
 }
+
 table.tablesorter thead tr .headerSortDown:after {
 	content: url('img/arrow-down-copy-6.svg');
 	padding-left:5px;
 	visibility:visible;
-/*	background-repeat: no-repeat;
-	background-position: center center;*/
 }
