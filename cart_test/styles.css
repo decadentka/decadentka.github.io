@@ -33,24 +33,40 @@ h1{
 	line-height: normal;
 	letter-spacing: normal;
 	color: #061e31;
+	margin:0
+}
+
+h2{
+	font-family: ProximaNova-Bold;
+	font-size: 28px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #061e31;
+	padding-left:23.8px;
+	margin:0;
 }
 
 .cart__info{
 	display:flex;
 	align-items:flex-start;
+	width: 1125px;
 	margin:50px auto 97px;
 }
 
 .cart__header{
 	display: inline-block;	
-	margin:0 144px 0 15px;
+	margin-right: 144px;
+	padding-left: 26px;
 }
 
 .cart__amount{
 	font-family: ProximaNova-Regular;
 	font-size: 32px;
 	color: #5e6367;
-	padding-left:15px;	
+	padding-left:10px;	
 }
 
 .content{
@@ -72,20 +88,19 @@ h1{
 }
 
 .cart__companies__tabs__wrapper{	
-	display: block;
-	
+	display: block;	
 }
 
 .cart__companies__tabs__wrapper:after{
 	content: '';
-        display: block;
+    display: block;
 	width: 100%;
 	height: 3px;
 	border-bottom: solid 1px #d2d2d2
 }
 
 .cart__companies__tabs{
-	width:1080px;
+	width:1058px;
 	list-style-type:none;
 	margin:0 auto;
 	padding:0;
@@ -113,12 +128,12 @@ h1{
 
 .cart__companies__tab:after{
 	content: '';
-        display: block;
+    display: block;
 	width: 100%;
 	height: 2px;
 	border-bottom: solid 1.5px transparent;
 	position: relative;
-        top: 4px;
+    top: 4px;
 	transition:.5s;
 }
 
@@ -156,6 +171,10 @@ h1{
 	text-transform:uppercase;
 }
 
+.cart__companies__list__head th:hover{
+	color: #92959a;
+}
+
 .cart__companies__list__head__column{
 	padding: 14px 0 17px;
 	cursor:pointer;
@@ -165,6 +184,10 @@ h1{
 
 .cart__companies__list__body__row{
 	border-bottom: solid 0.5px #d8d8d8;	
+}
+
+.cart__companies__list__body__row:last-child{
+	border-bottom: none;	
 }
 
 .cart__companies__list__body__row td{
@@ -198,46 +221,50 @@ h1{
 	display:none;
 }
 
-.cart__company__in-tender label{	
+.cart__company__in-tender span{	
 	width: 30px;
 	height: 30px;
 	border-radius: 4px;
-	background-color: #0682fe;
+    background-color: #ffffff;
+	border:1px solid #0682fe;
 	padding:3px 15px;
 	position:relative;
 }
 
-.cart__company__in-tender svg{	
-	width: 30px;
-        height: 30px;
-        position: absolute;
-    	left: 6px;
-    	bottom: -8px;
-	display: none;
+.cart__company__in-tender span:hover{
+	background-color: #f3f6f9;
 }
 
-.cart__company__in-tender input[type="checkbox"]:checked + svg{
-	display: block;
+.cart__company__in-tender input[type="checkbox"]:checked + span{
+	background: #0682fe url('img/galka.svg') no-repeat center center;
 }
 
-td.cart__company__name{
+div.cart__company__name{
 	font-family: ProximaNova-Bold;
 	font-size: 20px;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 1.1;
 	letter-spacing: normal;
-	color: #292929;
+	color: #292929;	
+}
+
+td.cart__company__name{
 	width:210px;
 }
 
 .cart__company__name p{
 	display:inline-block;
-	position: relative;
+	position: relative;	
+}
+
+div.cart__company__name{
+	margin:0 0 6px;
 }
 
 .cart__company__pro{	
 	position: relative;
+	margin:0;
 }
 
 .cart__company__pro:before{
@@ -259,10 +286,10 @@ td.cart__company__name{
 .cart__companies__list__head__column:first-child:before{
 	content:'В тендере';
 	position: absolute;
-    	margin-top:-10px;
+    margin-top:-10px;
 }
 
-.cart__company__name p:after{
+td.cart__company__name p:after{
 	content:'';
 	width:100%;
 	height: 3px;
@@ -285,13 +312,44 @@ td.cart__company__price{
 	width:180px;
 }
 
-.cart__company__price{
-	font-family: Arial;
-	color:#bcc1c7;
+.cart__company__price__level--1:before{
+	content: url('img/price-filled.svg')
+		url('img/price-empty.svg')
+		url('img/price-empty.svg')
+		url('img/price-empty.svg')
+		url('img/price-empty.svg');
 }
 
-.cart__company__price__level{
-	color:#221f20;
+.cart__company__price__level--2:before{
+	content: url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-empty.svg')
+		url('img/price-empty.svg')
+		url('img/price-empty.svg');
+}
+
+.cart__company__price__level--3:before{
+	content: url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-empty.svg')
+		url('img/price-empty.svg');
+}
+
+.cart__company__price__level--4:before{
+	content: url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-empty.svg');
+}
+
+.cart__company__price__level--5:before{
+	content: url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-filled.svg')
+		url('img/price-filled.svg');
 }
 
 td.cart__company__projects{
@@ -310,6 +368,12 @@ table.tablesorter thead tr .header:after {
 	height:16px;
 }
 
+table.tablesorter thead tr .header:not(.headerSortUp):hover:after{
+	content: url('img/arrow-down-copy-6.svg');
+	padding-left:5px;
+	visibility:visible;
+}
+
 table.tablesorter thead tr .headerSortUp:after {
 	content: url('img/arrow-up-copy-6.svg');
 	padding-left:5px;
@@ -320,4 +384,100 @@ table.tablesorter thead tr .headerSortDown:after {
 	content: url('img/arrow-down-copy-6.svg');
 	padding-left:5px;
 	visibility:visible;
+}
+
+.cart__companies__list__empty__img{
+	background: url('img/img-empty.png') no-repeat center center;	
+	height:143px;
+}
+
+.cart__companies__list__empty{
+	font-family: ProximaNova-Regular;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.61;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ababab;	
+}
+
+.cart__companies__link{
+	display:block;
+	font-family: ProximaNova-Regular;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.61;
+	letter-spacing: normal;
+	text-align: center;
+	color: #02bff2;
+	padding-top:41px;
+	padding-bottom:38px;
+}
+
+.cart__companies__link__sugested{
+	position: absolute;
+    top: 5px;
+    right: 0;
+	padding:0;
+}
+
+.cart__companies__link:after{
+	content: url('img/arrow-blue.svg');
+	padding-left:10px;
+	position: relative;
+    top: 2px;
+}
+
+.sugested__companies__info{
+	position:relative;
+}
+
+.sugested__companies{
+	display:flex;
+	justify-content:space-between;
+	margin-left:-10px;
+	margin-right:-10px;
+	margin-bottom:102.3px;
+}
+
+.sugested__company {
+	width: 100%;
+	border-radius: 6px;
+	background-color: #ffffff;
+	padding:0 22px;
+	display:inline-block;
+	margin:0 10px;
+	font-family: ProximaNova-Regular;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: #292929;
+}
+
+.sugested__company .cart__company__logo{
+	height:85px;
+	display:flex;
+	align-items:center;	
+}
+
+.sugested__company .cart__company__logo img{	
+	margin:auto 0;
+}
+
+.sugested__companies__head{
+	margin:73px 0 39px;
+}
+
+.sugested__company__in-cart{
+	width:147.1px;
+	height:58px;
+	margin:14px 0 16.7px;
+	background: url(img/cart.png) no-repeat center left;
 }
