@@ -1,0 +1,372 @@
+html, body{
+	margin:0;
+	padding:0;
+	background-color: #f1f1f1;
+}
+
+@font-face{
+	font-family: 'ProximaNova-Regular';
+	src: url('fonts/ProximaNova-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'ProximaNova-Extrabld';
+	src: url('fonts/ProximaNova-Extrabld.ttf');
+}
+
+@font-face{
+	font-family: 'ProximaNova-Bold';
+	src: url('fonts/ProximaNova-Bold.ttf');
+}
+
+.wrapper{
+	width:1111px;
+	margin:0 auto;
+}
+
+h1{	
+	font-family: ProximaNova-Extrabld;
+	font-size: 45px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #061e31;
+}
+
+.cart__info{
+	display:flex;
+	align-items:flex-start;
+	margin:50px auto 97px;
+}
+
+.cart__header{
+	display: inline-block;	
+	margin:0 144px 0 15px;
+}
+
+.cart__amount{
+	font-family: ProximaNova-Regular;
+	font-size: 32px;
+	color: #5e6367;
+	padding-left:15px;	
+}
+
+.content{
+	font-family: ProximaNova-Regular;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	color: #797979;
+}
+
+.cart__text{
+	display: inline-block;
+	width: 772px;	
+	padding-top:7px;
+	margin:0;
+}
+
+.cart__companies__tabs__wrapper{	
+	display: block;
+	
+}
+
+.cart__companies__tabs__wrapper:after{
+	content: '';
+    display: block;
+	width: 100%;
+	height: 3px;
+	border-bottom: solid 1px #d2d2d2
+}
+
+.cart__companies__tabs{
+	width:1080px;
+	list-style-type:none;
+	margin:0 auto;
+	padding:0;
+	display:flex;
+	justify-content:space-between;
+}
+
+.cart__companies__tab{
+	font-family: ProximaNova-Bold;
+	font-size: 17px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.06;
+	letter-spacing: normal;
+	color: #16b1ef;	
+}
+
+.cart__companies__tab:not(.active){
+	cursor:pointer;
+}
+
+.cart__companies__tab.active{
+	color: #292929;
+}
+
+.cart__companies__tab:after{
+	content: '';
+    display: block;
+	width: 100%;
+	height: 2px;
+	border-bottom: solid 1.5px transparent;
+	position: relative;
+    top: 4px;
+	transition:.5s;
+}
+
+.cart__companies__tab.active:after{
+	border-bottom: solid 1.5px #2a2a2a;
+}
+
+.cart__companies__list__wrapper{
+	margin: 35.3px auto;
+	width: 1111px;	
+	border-radius: 6px;
+	box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.06);
+	background-color: #ffffff;
+	display: none;
+}
+
+.cart__companies__list__wrapper.active{
+	display:block;
+}
+
+.cart__companies__list{
+	width: 1111px;
+	border-collapse:collapse;
+}
+
+.cart__companies__list__head{
+	font-family: ProximaNova-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: 0.6px;
+	color: #aaaeb3;
+	text-transform:uppercase;
+}
+
+.cart__companies__list__head__column{
+	padding: 14px 0 17px;
+	cursor:pointer;
+	font-weight:normal;
+	text-align:left;
+}
+/*
+.active_up:after{
+	content:url('img/arrow-down-copy-6.svg');
+	width:20px;
+	height:10px;
+	margin-left:10px;
+}
+
+.active_down:after{
+	content:url('img/arrow-down-copy-6.svg');
+	width:20px;
+	height:10px;
+	background: #ccc ;
+	margin-left:10px;
+	transform:rotate(180deg);
+}*/
+
+.cart__companies__list__body__row{
+	border-bottom: solid 0.5px #d8d8d8;	
+}
+
+.cart__companies__list__body__row td{
+	margin:0;	
+	vertical-align:middle;
+	height:90px;
+}
+
+.cart__companies__list__body__row td:last-child{
+/*	width:130px;*/
+}
+
+.cart__companies__list__body__row td p{
+	margin:0;
+	padding:0;
+	
+}
+
+.cart__companies__list__body{
+	font-family: ProximaNova-Regular;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.1;
+	letter-spacing: normal;
+	color: #292929;
+	
+}
+
+.cart__company__in-tender{
+	width: 30px;
+	padding-left: 25px;
+}
+
+.cart__company__in-tender input[type="checkbox"]{
+	display:none;
+}
+
+.cart__company__in-tender label{	
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: #0682fe;
+	padding:3px 15px;
+	position:relative;
+}
+/*
+.cart__company__in-tender label:before{	
+	content:url('img/arrow-down-copy-6.svg');
+	position: absolute;
+    left: 6px;
+    bottom: -8px;
+	display:block;
+}
+
+.cart__company__in-tender input[type="checkbox"]:checked label:before{
+	display:none;
+}*/
+
+.cart__company__in-tender svg{	
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 6px;
+    bottom: -8px;
+	display: none;
+}
+
+.cart__company__in-tender input[type="checkbox"]:checked + svg{
+	display: block;
+}
+
+td.cart__company__name{
+	
+}
+
+td.cart__company__name{
+/*	*/
+	font-family: ProximaNova-Bold;
+	font-size: 20px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.1;
+	letter-spacing: normal;
+	color: #292929;	
+/*	*/
+	width:210px;
+}
+
+.cart__company__name p{
+	display:inline-block;
+	position: relative;
+}
+
+.cart__company__pro{
+	
+	position: relative;
+}
+
+.cart__company__pro:before{
+	content:'PRO';
+	font-family: ProximaNova-Regular;
+	font-size: 13px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;	
+	letter-spacing: 0.5px;
+	color: #2a2a2a;
+	background-color: #fdb815;
+	padding:3px 5px;
+	position:absolute;
+	top:-7px;
+	right:-43px;
+}
+
+.cart__companies__list__head__column:first-child:before{
+	content:'В тендере';
+	position: absolute;
+    margin-top:-10px;
+}
+
+.cart__company__name p:after{
+	content:'';
+	width:100%;
+	height: 3px;
+	position: absolute;
+	bottom:0;
+	left:0;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+td.cart__company__logo{
+	width:101.5px;
+	text-align:center;
+}
+
+td.cart__company__city{
+	width:170px;
+}
+
+td.cart__company__price{	
+	width:180px;
+}
+
+.cart__company__price{
+	font-family: Arial;
+	color:#bcc1c7;
+}
+
+.cart__company__price__level{
+	color:#221f20;
+}
+
+td.cart__company__projects{
+	width:115px;
+}
+
+td.cart__company__age{
+	width:110px;
+}
+
+/*
+.cart__company__age:after {
+	content:' лет';
+}*/
+
+table.tablesorter thead tr .header:after {
+	content: url('img/arrow-up-copy-6.svg');
+	padding-left:5px;
+	visibility:hidden;
+	width:16px;
+	height:16px;
+}
+
+table.tablesorter thead tr .headerSortUp:after {
+	content: url('img/arrow-up-copy-6.svg');
+	padding-left:5px;
+	visibility:visible;
+/*	background-repeat: no-repeat;
+	background-position: center center;*/
+}
+table.tablesorter thead tr .headerSortDown:after {
+	content: url('img/arrow-down-copy-6.svg');
+	padding-left:5px;
+	visibility:visible;
+/*	background-repeat: no-repeat;
+	background-position: center center;*/
+}
