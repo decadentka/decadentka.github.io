@@ -24,7 +24,6 @@
                 sorter: false 
             },			
         },
-		sortList: [[4,0]],
     }); 
     } 
 ); 
