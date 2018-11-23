@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css">
+	<title>Столы и столешницы</title>
+	<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>	
+	<script src="js/fancybox/jquery.fancybox.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script>
+		function check() {
+			  var inp1 = document.getElementById('input1'),
+				  inp2 = document.getElementById('input2');
+			  document.getElementById('button').disabled = inp1.value && inp2.value ? false : "disabled";
+			  
+			  var inp1 = document.getElementById('input3');
+			  document.getElementById('subscribe').disabled = inp1.value ? false : "disabled";
+		};
+		
+		$(document).ready(function(){
+		  $(".last-works-carousel").owlCarousel(		  
+			  {
+				loop:true,
+				margin:10,
+				autoplay:true,
+				autoplayTimeout:2500,
+				autoplayHoverPause:true,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+						nav:true
+					},
+					768:{
+						items:2,
+						nav:true
+					},
+					992:{
+						items:3,
+						nav:true
+					}
+				}
+			}
+		 ); 
+		
+		
+		
+		  $(".slider").owlCarousel(		  
+			  {
+				loop:true,
+				margin:0,
+				items:1,
+				autoplay:true,
+				autoplayTimeout:5000,
+				autoplaySpeed:1000,
+				autoplayHoverPause:false,
+				responsiveClass:true,
+				nav: false,
+				navText: ['', ''],
+				slideBy: 1,
+				dots: true
+				}
+			);
+		})
+
+	</script>	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row header-inner">				
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="logo">
+						<a href="/"><img src="img/logo.png"></a>
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-2 col-sm-push-4 col-md-9 col-md-push-0 col-lg-9">
+					<div class="top-menu">						
+						<input type="checkbox" id="checkbox-menu">
+						<label for="checkbox-menu" class="bars">						
+						</label>						
+						<div class="menu">
+							<ul>
+								<li><a href="/">Продукция</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Столы и столешницы</nobr></a></li>
+										<li><a href="/"><nobr>Подоконники</nobr></a></li>
+										<li><a href="/"><nobr>Ступени и части лестниц</nobr></a></li>
+										<li><a href="/"><nobr>Мебель для ванной</nobr></a></li>
+										<li><a href="/"><nobr>Мебель для улицы</nobr></a></li>
+										<li><a href="/"><nobr>Садово-парковая архитектура</nobr></a></li>
+										<li><a href="/"><nobr>Нестандартные решения</nobr></a></li>
+									</ul>
+								</li>
+								<li><a href="/">Каталог камня</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Natural Sand</nobr></a></li>
+										<li><a href="/"><nobr>Design</nobr></a></li>
+										<li><a href="/"><nobr>Pr</nobr></a></li>
+										<li><a href="/"><nobr>RALClassic</nobr></a></li>
+										<li><a href="/"><nobr>TOP</nobr></a></li>
+									</ul>
+								</li>
+								<li><a href="/">Цены</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Прайс-лист</nobr></a></li>
+										<li><a href="/"><nobr>Акции</nobr></a>
+									</ul>
+								</li>
+								<li><a href="/">Технология</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</header>
+	
+	<section class="container-fluid">
+		<div class="row">
+			<div class="hidden-xs">
+				<div class="slider owl-carousel owl-theme">
+					<div class="owl-item slide"><a href="/">
+						<img src="img/slide-stupeni1.jpg">
+						<div class="slide-text white">
+							<h2>Специальная цена<br> на ступени<br> из литьевого камня</h2>
+							<p>Новая ступень из камня по цене ступени из бука</p>
+							<h2>2900 руб./ступень</h2>							
+						</div>
+						<div class="more">Подробнее</div></a>
+					</div>
+					<div class="owl-item slide"><a href="/">
+						<img src="img/slide.png">
+						<div class="slide-text black">
+							<h2>Скидка 30%<br> на столешницы<br> из литьевого камня</h2>
+							<p>Купите новую столешницу по цене столешницы из ДСП</p>
+							<h2>7700 руб./погонный метр</h2>							
+						</div>
+						<div class="more">Подробнее</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Столешницы, подоконники, мебель для ванн, ступени</h1>
+			</div>
+			<div class="col-xs-12 text">
+				<p>Компания ЕТС — это производственное предприятие, расположенное в Самаре. <br>
+				Мы обладаем усовершенствованным производством полного цикла, контролируем процесс от начала до конца. Производим современные детали интерьеров - столешницы, подоконники, ступени, а также встроенные кухонные мойки, мебель и изделия для приусадебного участка из универсального материала. </p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="why-us">
+					<div class="row">
+						<div class="col-xs-12 col-md-4">
+							<div class="row row-2">
+								<div class="col-sm-6 col-md-12">
+									<img src="img/icon-04.png">
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<p>На изготовление вашего заказа мы берём всего 15 рабочих дней. Строгое соблюдение сроков обеспечено высокой технологичностью и автоматизацией нашего производства.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<div class="row row-2">
+								<div class="col-sm-6 col-md-12">
+									<img src="img/icon-05.png">
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<p>Мы не только производим, но и монтируем  изделия. Ведем проект от обсуждения и эскизов до чистового монтажа и довольного клиента.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<div class="row row-2">
+								<div class="col-sm-6 col-md-12">
+									<img src="img/icon-06.png">
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<p>Наш кварцевый и мраморный камень проходит строгий контроль качества и безопасности. Радиационный фон отсутствует, камень экологически чистый.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section class="request">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="request-inner">
+						<div class="col-xs-12">
+							<h2>Оставьте заявку, мы перезвоним!</h2>
+						</div>
+						<div class="col-xs-12">
+							<p>Заполните форму и мы перезвоним в ближайшее время</p>
+						</div>
+						<form>
+							<div class="col-xs-12 col-sm-4 col-md-5 form-input">
+								<input type="text" onkeyup="check();" id="input1" placeholder="Ваше имя">
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-5 form-input">
+								<input type="text" onkeyup="check();" id="input2" placeholder="+7">
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<button type="submit" id="button" disabled="disabled">Готово!</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<section class="container last-works">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Последние работы</h2>
+			</div>
+			<div class="col-xs-12">
+				<div class="owl-carousel owl-theme last-works-carousel">
+					<a href="/">
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-01.png">
+							<div class="last-works-name">
+								<p><span>Коллекция Natural, Sand</span></p>
+								<p>Подоконник, совмещенный со столешницей</p>
+								<div class="more">Подробнее</div>
+							</div>
+						</div>
+					</a>
+					<a href="/">
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-02.png">
+							<div class="last-works-name">
+								<p><span>Коллекция Премиум</span></p>
+								<p>Кухонная столешница с раковиной</p>
+								<div class="more">Подробнее</div>
+							</div>
+						</div>
+					</a>
+					<a href="/">
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-03.png">
+							<div class="last-works-name">
+								<p><span>Коллекция Люкс</span></p>
+								<p>Столик для ванной комнаты с раковиной</p>
+								<div class="more">Подробнее</div>
+							</div>
+						</div>
+					</a>
+					<a href="/">
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-03.png">
+							<div class="last-works-name">
+								<p><span>Коллекция Люкс</span></p>
+								<p>Столик для ванной комнаты с раковиной</p>
+								<div class="more">Подробнее</div>
+							</div>	
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+					
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="st-item">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 hidden-lg">
+							<h2>Ступени</h2>
+							<div class="st-item-text">
+								<p>Текст о том, почему ступени из литьевого камня это удобно и хорошо.</p>
+								<ul>
+									<li>Основные преимущества</li>
+									<li>Основные преимущества</li>
+									<li>Основные преимущества</li>
+								</ul>
+							</div>
+							<div class="more"><a href="/">Рассчитать стоимость</a></div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 st-item-photo">
+							<img src="img/no-photo.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 st-item-photo">
+							<img src="img/no-photo.jpg">
+						</div>
+						<div class="hidden-xs hidden-sm hidden-md col-lg-4">				
+							<h2>Ступени</h2>
+							<div class="st-item-text">
+								<p>Текст о том, почему ступени из литьевого камня это удобно и хорошо.</p>
+								<ul>
+									<li>Основные преимущества</li>
+									<li>Основные преимущества</li>
+									<li>Основные преимущества</li>
+								</ul>
+							</div>
+							<div class="more"><a href="/">Рассчитать стоимость</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="container">
+		<div class="row">	
+			<div class="col-xs-12">
+				<div class="why-us why-us-2">
+					<div class="row">
+						<div class="col-xs-12 col-md-4">
+							<div class="row row-2">
+								<div class="col-sm-6 col-md-12">
+									<img src="img/icon-02.png">
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<p>Изделия устойчивы к воде и химическим соединениям, в том числе к едким кислотам. </p>
+									<p>Также изделия из литьевого камня обладают повышенной прочностью, это позволяет выдержать удары и длительное силовое воздействие.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">			
+							<div class="row row-2">
+								<div class="col-sm-6 col-md-12">
+									<img src="img/icon-01.png">
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<p>Наше производство позволяет изготавливать самые разнообразные изделия, так что можете дать волю фантазии!</p>
+									<p>Поверхности изделий из литьевого камня монолитны , в местах стыков они сращиваются невидимым швом. Это позволяет производить любые по форме предметы.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<div class="row row-2">
+								<div class="col-sm-6 col-md-12">
+									<img src="img/icon-03.png">
+								</div>
+								<div class="col-sm-6 col-md-12">
+									<p>Такие свойства изделий, как прочность, износостойкость, устойчивость к воде и к химическим реагентам делают их выгодным вложением.</p>
+									<p>Тут бы еще написать о гарантии и отчего фабрика камня ЕТС предлагает изделия по цене, ниже чем у конкурентов.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>	
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="st-item">
+					<div class="row">
+						<div class="col-xs-12 col-lg-4">
+							<h2>Столешницы</h2>
+							<div class="st-item-text">
+								<p>Текст о том, почему столешницы из литьевого камня это удобно и хорошо.</p>
+								<ul>
+									<li>Основные преимущества</li>
+									<li>Основные преимущества</li>
+									<li>Основные преимущества</li>
+								</ul>
+							</div>
+							<div class="more"><a href="/">Рассчитать стоимость</a></div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 st-item-photo">
+							<img src="img/no-photo.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 st-item-photo">
+							<img src="img/no-photo.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="subscribe">
+					<div class="col-xs-12">				
+						<h2>Узнавайте о последних новостях и скидках первыми</h2>
+					</div>
+					<form>
+						<div class="form-input col-xs-12 col-sm-9 col-md-9 col-lg-6 col-lg-push-2">
+							<input type="text" onkeyup="check();" id="input3" placeholder="Ваш почтовый адрес">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-lg-push-2">
+							<button type="submit" id="subscribe" disabled="disabled">Готово!</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="bottom-menu">
+						<div class="hidden-xs col-sm-8">					
+							<ul>
+								<li><a href="/">Продукция</a></li>
+								<li><a href="/">Каталог камня</a></li>
+								<li><a href="/">Цены</a></li>
+								<li><a href="/">Технология</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Партнёрам</a></li>
+							</ul>
+						</div>
+						<div class="contacts col-xs-12 col-sm-4">
+							<p>Контакты</p>
+							<p class="tel"><a href="tel:89033033023">+7 903 303 30 23</a></p>
+							<p class="e-mail">Возникли вопросы?</br>Пишите на почту <a href="mailto:sale@etstone.ru">sale@etstone.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hidden-xs hidden-sm col-md-12">
+					<div class="footer-logo">
+						<a href="/"><img src="img/logo-bt.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>

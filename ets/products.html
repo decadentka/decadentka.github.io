@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css">
+	<title>Продукция</title>
+	<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>	
+	<script src="js/fancybox/jquery.fancybox.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script>
+		function check() {
+			  var inp1 = document.getElementById('input1'),
+				  inp2 = document.getElementById('input2');
+			  document.getElementById('button').disabled = inp1.value && inp2.value ? false : "disabled";
+			  
+		}
+		
+		$(document).ready(function(){
+		  $(".portfolio-carousel").owlCarousel(
+			  {
+				loop:true,
+				margin:10,
+				autoplay:true,
+				autoplayTimeout:2000,
+				autoplayHoverPause:true,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+						nav:true
+					},
+					480:{
+						items:2,
+						nav:true
+					},
+					992:{
+						items:3,
+						nav:true
+					}
+				}
+			}
+		 )  
+		})
+
+	</script>	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row header-inner">				
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="logo">
+						<a href="/"><img src="img/logo.png"></a>
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-2 col-sm-push-4 col-md-9 col-md-push-0 col-lg-9">
+					<div class="top-menu">						
+						<input type="checkbox" id="checkbox-menu">
+						<label for="checkbox-menu" class="bars">						
+						</label>						
+						<div class="menu">
+							<ul>
+								<li><a href="/">Продукция</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Столы и столешницы</nobr></a></li>
+										<li><a href="/"><nobr>Подоконники</nobr></a></li>
+										<li><a href="/"><nobr>Ступени и части лестниц</nobr></a></li>
+										<li><a href="/"><nobr>Мебель для ванной</nobr></a></li>
+										<li><a href="/"><nobr>Мебель для улицы</nobr></a></li>
+										<li><a href="/"><nobr>Садово-парковая архитектура</nobr></a></li>
+										<li><a href="/"><nobr>Нестандартные решения</nobr></a></li>
+									</ul>
+								</li>
+								<li><a href="/">Каталог камня</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Natural Sand</nobr></a></li>
+										<li><a href="/"><nobr>Design</nobr></a></li>
+										<li><a href="/"><nobr>Pr</nobr></a></li>
+										<li><a href="/"><nobr>RALClassic</nobr></a></li>
+										<li><a href="/"><nobr>TOP</nobr></a></li>
+									</ul>
+								</li>
+								<li><a href="/">Цены</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Прайс-лист</nobr></a></li>
+										<li><a href="/"><nobr>Акции</nobr></a>
+									</ul>
+								</li>
+								<li><a href="/">Технология</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</header>
+	
+	<section class="container-fluid breadcrumps-container">
+		<div class="row">
+			<ul class="breadcrumps hidden-xs">
+				<li><p><a href="/">Фабрика камня ЕТС</a></p></li>
+				<p>&nbsp;&gt;&nbsp;</p>
+				<li><p class="open-page"><a href="/">Продукция</a></p></li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Мы специализируемся на производстве изделий из&nbsp;литьевого камня</h1>
+			</div>
+			<div class="col-xs-12 text">
+				<p>Материал является универсальным за счет состава и физических свойств.<br> Из литьевого камня получаются отличные ступени, информационные и барные стойки, столешницы, подоконники, встроенные мойки и раковины, мебель и садово-парковая архитектура.</p>
+				<p>Технологические возможности нашей фабрики и квалификация мастеров позволяют<br> изготавливать заказы любой сложности и объема. </p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="container">
+		<div class="row products">
+			<a href="/">
+			<div class="products-item col-xs-12 col-sm-6 col-lg-4">
+				<img src="img/products-table.png">
+				<h2>Столешницы</h2>
+			</div></a>
+			<a href="/">
+			<div class="products-item col-xs-12 col-sm-6 col-lg-4">
+				<img src="img/products-sill.png">
+				<h2>Подоконники</h2>
+			</div></a>
+			<a href="/">
+			<div class="products-item col-xs-12 col-sm-6 col-lg-4">
+				<img src="img/products-lestrade.png">
+				<h2>Лестницы</h2>
+			</div></a>
+			<a href="/">
+			<div class="products-item col-xs-12 col-sm-6 col-lg-4">
+				<img src="img/products-bathroom.png">
+				<h2>Мебель для ванной</h2>
+			</div></a>
+			<a href="/">
+			<div class="products-item col-xs-12 col-sm-6 col-lg-4">
+				<img src="img/products-garden.png">
+				<h2>Садово-парковая архитектура</h2>
+			</div></a>
+			<a href="/">
+			<div class="products-item col-xs-12 col-sm-6 col-lg-4">
+				<img src="img/products-street.png">
+				<h2>Мебель для улицы</h2>
+			</div></a>
+		</div>
+		<div class="choose-color"><a href="/">Подобрать цвет</a></div>
+	</section>	
+	
+	<section class="container">
+		<div class="row">
+			<div class="portfolio">
+				<div class="col-xs-12">
+					<h3>Портфолио</h3>
+				</div>		
+				<div class="col-xs-12">
+					<div class="owl-carousel owl-theme portfolio-carousel">
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-01.png">
+						</div>
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-02.png">
+						</div>											
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-03.png">
+						</div>						
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-04.png">
+						</div>
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-05.png">
+						</div>						
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-06.png">
+						</div>
+					</div>
+				</div>
+				<div class="more"><a href="/">Смотреть полностью</a></div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="container subscribe-catalog">
+		<div class="row">			
+			<div class="col-xs-12">				
+				<h2>Оставьте заявку, наш специалист свяжется с Вами!</h2>
+			</div>
+			<form class="col-xs-12">
+				<div class="col-xs-12 col-sm-4 col-md-5 form-input">
+					<input type="text" onkeyup="check();" id="input1" placeholder="Ваше имя">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-5 form-input">
+					<input type="text" onkeyup="check();" id="input2" placeholder="+7">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-2 form-button">
+					<button type="submit" id="button" disabled="disabled">Готово!</button>
+				</div>
+			</form>			
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="bottom-menu bottom-menu-catalog">
+						<div class="hidden-xs col-sm-8">					
+							<ul class="hidden-xs col-sm-6">
+								<li class="open"><a href="/">Продукция</a></li>
+								<ul>
+									<li><a href="/">Столы и столешницы</a></li>
+									<li><a href="/">Подоконники</a></li>
+									<li><a href="/">Ступени и части лестниц</a></li>
+									<li><a href="/">Мебель для ванной</a></li>
+									<li><a href="/">Мебель для улицы</a></li>
+									<li><a href="/">Садово-парковая архитектура</a></li>
+									<li><a href="/">Нестандартные решения</a></li>
+								</ul>
+							</ul>
+							<ul class="hidden-xs col-sm-5">
+								<li><a href="/">Каталог камня</a></li>
+								<li><a href="/">Цены</a></li>
+								<li><a href="/">Технология</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Партнёрам</a></li>
+							</ul>
+						</div>
+						<div class="contacts col-xs-12 col-sm-4">
+							<p>Контакты</p>
+							<p class="tel"><a href="tel:89033033023">+7 903 303 30 23</a></p>
+							<p class="e-mail">Возникли вопросы?</br>Пишите на почту <a href="mailto:sale@etstone.ru">sale@etstone.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hidden-xs hidden-sm col-md-12">
+					<div class="footer-logo">
+						<a href="/"><img src="img/logo-bt.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>

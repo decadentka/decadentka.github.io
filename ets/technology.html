@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css">
+	<title>Технология</title>
+	<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>	
+	<script src="js/fancybox/jquery.fancybox.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script>
+		function check() {
+			  var inp1 = document.getElementById('input1'),
+				  inp2 = document.getElementById('input2');
+			  document.getElementById('button').disabled = inp1.value && inp2.value ? false : "disabled";
+			  
+			  var inp1 = document.getElementById('input3');
+			  document.getElementById('subscribe').disabled = inp1.value ? false : "disabled";
+		}
+		
+		$(document).ready(function(){
+		  $(".portfolio-carousel").owlCarousel(
+			  {
+				loop:true,
+				margin:10,
+				autoplay:true,
+				autoplayTimeout:2000,
+				autoplayHoverPause:true,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+						nav:true
+					},
+					480:{
+						items:2,
+						nav:true
+					},
+					992:{
+						items:3,
+						nav:true
+					}
+				}
+			}
+		 )  
+		})
+
+	</script>	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row header-inner">				
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="logo">
+						<a href="/"><img src="img/logo.png"></a>
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-2 col-sm-push-4 col-md-9 col-md-push-0 col-lg-9">
+					<div class="top-menu">						
+						<input type="checkbox" id="checkbox-menu">
+						<label for="checkbox-menu" class="bars">						
+						</label>						
+						<div class="menu">
+							<ul>
+								<li><a href="/">Продукция</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Столы и столешницы</nobr></a></li>
+										<li><a href="/"><nobr>Подоконники</nobr></a></li>
+										<li><a href="/"><nobr>Ступени и части лестниц</nobr></a></li>
+										<li><a href="/"><nobr>Мебель для ванной</nobr></a></li>
+										<li><a href="/"><nobr>Мебель для улицы</nobr></a></li>
+										<li><a href="/"><nobr>Садово-парковая архитектура</nobr></a></li>
+										<li><a href="/"><nobr>Нестандартные решения</nobr></a></li>
+									</ul>
+								</li>
+								<li><a href="/">Каталог камня</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Natural Sand</nobr></a></li>
+										<li><a href="/"><nobr>Design</nobr></a></li>
+										<li><a href="/"><nobr>Pr</nobr></a></li>
+										<li><a href="/"><nobr>RALClassic</nobr></a></li>
+										<li><a href="/"><nobr>TOP</nobr></a></li>
+									</ul>
+								</li>
+								<li><a href="/">Цены</a>
+									<ul class="sub-menu hidden-xs hidden-sm">
+										<li><a href="/"><nobr>Прайс-лист</nobr></a></li>
+										<li><a href="/"><nobr>Акции</nobr></a>
+									</ul>
+								</li>
+								<li><a href="/">Технология</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</header>
+	
+	<section class="container-fluid breadcrumps-container">
+		<div class="row">
+			<ul class="breadcrumps hidden-xs">
+				<li><p><a href="/">Фабрика камня ЕТС</a></p></li>
+				<p>&nbsp;&gt;&nbsp;</p>
+				<li><p class="open-page"><a href="/">Технология</a></p></li>
+			</ul>
+		</div>
+	</section>	
+		
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Технология «камень в смоле»</h1>
+			</div>
+			<div class="col-xs-12 content">
+				<img src="img/technology.png" align="right"> 
+				<p>
+					 Для изделия используются специальные формы-матрицы, индивидуально изготовленные под каждый заказ. Формирование конечного продукта происходит путем литья – матрица наполняется смесью с наполнителем и добавками, которая в дальнейшем затвердевает.
+				</p>
+				<p>
+					 Для изготовления используется следующий набор компонентов: 
+				</p>
+				<ul> 
+					 <li>каменная крошка натуральных материалов (более 80%),</li>
+					 <li>цветовой наполнитель, </li>
+					 <li>полиэфирная изофталиевая смола,</li>
+					 <li>гелькоут (относится к специализированным добавкам. Благодаря этому элементу достигается высокая прочность и влагостойкость – свойства, которыми обладает высококачественный литьевой мрамор),</li>
+					 <li>полиэфирные смолы (составляющая, за счет которой изделие обретает долговечность структуры и оптимальные показатели вязкости).</li>
+				</ul>				
+				<p>
+					 При изготовлении наших изделий мы используем метод «двойной сушки» (естественная и постотверждение), что приводит в итоге к испарению продуктов активации смол и к сохранению геометрии изделия.
+				</p>
+				<p>
+					 На заключительном этапе производится финишная обработка изделия: шлифовка и полировка в соответствии с пожеланиями клиента.
+				</p>
+				
+				<table class="table">
+					<caption>Сравнительные характеристики материалов</caption>
+					<thead>
+						<tr>
+							<th>Искусственный «литьевой» камень
+							</th>
+							<th>Природный натуральный камень
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2">
+								<h4>Преимущества</h4>
+							</td>
+						</tr>
+						<tr>
+							<td data-title="Искусственный «литьевой» камень">
+								<ol>
+									<li>Материал экологически чист и безопасен в использовании;</li>
+									<li>Изделия не подвластны размножению грибков и бактерий;</li>
+									<li>Изделия имеют высокую износостойкость, ударопрочность и влагостойкость;</li>
+									<li>Благодаря непористой структуре, не впитывают жидкости, красящие вещества и запахи;</li>
+									<li>Можно ставить горячее на поверхности;</li>
+									<li>Неприхотливы в уходе;</li>
+									<li>Используя технологии литья, изделие выглядит как единое целое; 
+									<li>Можно изготавливать изделия различных замысловатых форм и размеров;</li>
+									<li>Изделия ремонтопригодны в случае механического повреждения; 
+									<li>Более 300 цветов и оттенков;</li>
+									<li>Изделия, в отличие от изделий из натурального камня, на ощупь теплые и приятные;</li>
+									<li>Возможность повторения «рисунка камня» по прошествии времени.</li>
+								</ol>
+							</td>
+							<td data-title="Природный натуральный камень">
+								<ol>
+									<li>«Рисунок» изделий из натурального камня неповторим; </li>
+									<li>Материал экологически чист, прочен, огнеустойчив, влагостоек и долговечен;</li>
+									<li>Материал устойчив к ударам, царапинам, истиранию и пятнам, не впитывает запахи и легко моется;</li>
+									<li>Можно фигурно обработать края.</li>
+								</ol>
+							</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td colspan="2">
+								<h4>Недостатки</h4>
+							</td>
+						</tr>					
+						<tr>
+							<td data-title="Искусственный «литьевой» камень">
+								<ol>
+									<li>Устанавливать такие изделия должны только профессиональные специалисты, также как и ремонтировать, в случае повреждения.</li>
+									<li>Нельзя использовать абразивные чистящие вещества и грубую железную щётку при уходе.</li>
+								</ol>
+							</td>
+							<td data-title="Природный натуральный камень">
+								<ol>
+									<li>Существенная цена; </li>
+									<li>Неремонтопригодность; </li>
+									<li>Низкая стойкость к абразивному истиранию; </li>
+									<li>Из-за сложности рисунка плохо стыкуются; </li>
+									<li>Наличие стыков при производстве габаритных изделий; </li>
+									<li>Большой вес; </li>
+									<li>Сложность в изготовлении изделий; </li>
+									<li>Ограничение по форме изделия; </li>
+									<li>Изделия «холодны» на ощупь.</li>
+								</ol>
+							</td>
+						</tr>					
+					</tbody>
+				</table>				
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container">
+		<div class="row">
+			<div class="portfolio">
+				<div class="col-xs-12">
+					<h3>Портфолио</h3>
+				</div>		
+				<div class="col-xs-12">
+					<div class="owl-carousel owl-theme portfolio-carousel">
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-01.png">
+						</div>
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-02.png">
+						</div>											
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-03.png">
+						</div>						
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-04.png">
+						</div>
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-05.png">
+						</div>						
+						<div class="col-xs-12 works owl-item">
+							<img src="img/our-works-06.png">
+						</div>
+					</div>
+				</div>
+				<div class="more"><a href="/">Смотреть полностью</a></div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="bottom-menu bottom-menu-catalog">
+						<div class="hidden-xs col-sm-8">					
+							<ul class="hidden-xs col-sm-6">
+								<li class="open"><a href="/">Продукция</a></li>
+								<ul>
+									<li><a href="/">Столы и столешницы</a></li>
+									<li><a href="/">Подоконники</a></li>
+									<li><a href="/">Ступени и части лестниц</a></li>
+									<li><a href="/">Мебель для ванной</a></li>
+									<li><a href="/">Мебель для улицы</a></li>
+									<li><a href="/">Садово-парковая архитектура</a></li>
+									<li><a href="/">Нестандартные решения</a></li>
+								</ul>
+							</ul>
+							<ul class="hidden-xs col-sm-5">
+								<li><a href="/">Каталог камня</a></li>
+								<li><a href="/">Цены</a></li>
+								<li><a href="/">Технология</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Партнёрам</a></li>
+							</ul>
+						</div>
+						<div class="contacts col-xs-12 col-sm-4">
+							<p>Контакты</p>
+							<p class="tel"><a href="tel:89033033023">+7 903 303 30 23</a></p>
+							<p class="e-mail">Возникли вопросы?</br>Пишите на почту <a href="mailto:sale@etstone.ru">sale@etstone.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hidden-xs hidden-sm col-md-12">
+					<div class="footer-logo">
+						<a href="/"><img src="img/logo-bt.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
