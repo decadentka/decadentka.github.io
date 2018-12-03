@@ -1,0 +1,45 @@
+.share{
+    background-color: #f7f7f7;
+    padding-top: 45px;
+}
+.share__form{
+    text-align: center;
+    margin: 0 30px;
+}
+.share__form__text{
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 35px;
+	margin-top:0;
+}
+.share__form__button{
+    background-color: #e7402f;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.share__info{
+    border-top: 1px solid #aaa;
+    padding: 15px 30px 25px;
+    color: #aaaaaa;
+    font-family: 'Trebuchet MS';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+}
+.share__info__keyword{
+    font-weight: bold;
+    font-style: normal;
+}
+.share__info__visit{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+}
+.share__info__visit__p{
+	margin:0;
+}
+.share__info__visit__p:first-child{
+	font-style: normal;
+}

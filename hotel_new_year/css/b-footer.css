@@ -1,0 +1,31 @@
+.footer{
+    padding: 30px 30px 10px;
+    background: #ffffff;
+}
+.social{
+    display: inline-block;
+    background: #bbb;
+    border-radius: 25px;
+    margin: 0 6px;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+.footer__social{
+    text-align: center;
+    margin: 0 0 25px;
+}
+.footer__info{
+    font-family: 'Trebuchet MS';
+    font-size: 13px;
+    line-height: 19px;
+    color:#999;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 14px;
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+}

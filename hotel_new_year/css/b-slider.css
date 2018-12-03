@@ -1,0 +1,34 @@
+.slider{
+    background: url('../i/new-year.png') no-repeat center 0;
+    width: 100%;
+    padding: 90px 0;
+}
+.slider__header{
+    font-family: 'Bitter';
+    font-size: 30px;
+    line-height: 24px;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+	padding:0 30px;
+}
+.slider__text{
+    text-align: center;
+	padding:0 30px;
+}
+.slider__desc{
+    font-family: 'Bitter';
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+    margin-top: 31px;
+    color:#fff;
+    text-align: center;
+}
+
+@media all and (max-width: 600px){
+	.slider{
+		padding:30px 0;
+	}
+}

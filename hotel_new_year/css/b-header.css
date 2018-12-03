@@ -1,0 +1,91 @@
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 30px;
+}
+.header__auth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__auth__text{
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    margin: 0 20px 0;
+    text-align: right;
+}
+.header__auth__text__name{
+    font-weight: bold;
+}
+.header__auth__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url('../images/daria.jpg') center center/90px no-repeat;
+    margin: 0;
+}
+.header__personal{
+    background: #ccc;
+    padding: 0 30px;
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+}
+.header__personal__data{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    color: #fff;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 0;
+}
+.header__personal__data__section{
+    display: flex;
+    padding: 8px 0;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+}
+.header__personal__data__section:first-child{
+    margin-right: 39px;
+}
+.header__personal__data__number{
+    padding: 0 6px;
+    color: #222;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-right: 7px;
+    min-width: 16px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+}
+.header__personal__data__desc{
+    line-height: 14px;
+    display: inline-block;
+    max-width: 80px;
+}
+@media all and (max-width: 600px) {
+	.header__top{
+         display: flex;
+         flex-direction: column;
+     }
+    .header__auth{
+        margin-top: 30px;
+    }
+	.header__personal__data{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .header__personal__data__section{
+        justify-content: center;
+    }
+}

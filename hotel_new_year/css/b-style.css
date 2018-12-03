@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter.otf');
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: url('../i/bg.png') center center  repeat;
+}
+.wrapper{
+    max-width: 640px;
+    margin: 0 auto;
+}
+button{
+    height: 50px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 0 28px;
+    border: none;
+}
+.sticker__new{
+    width: 116px;
+    color:#fff;
+    background-color: #e7402f;
+    padding: 2px 10px 2px 30px;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    margin-left: -30px;
+}
