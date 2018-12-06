@@ -31,4 +31,7 @@
 	.slider{
 		padding:30px 0;
 	}
+	.slider__header{
+		line-height: 36px;
+	}
 }
