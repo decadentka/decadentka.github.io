@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Страница каталога</title>
+    <title>Список товаров</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/all.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mousewheel.pack.js"></script>
@@ -24,9 +24,10 @@
 			<p class="contacts__tel"><a class="header__contacts__link" href="tel:+79272601525">+7 927 260 15 25</a></p>
 			<p class="contacts__address">Корсунский переулок, 30</p>
 			<p class="contacts__email"><a class="header__contacts__link" href="email:kamelit63@yandex.ru">kamelit63@yandex.ru</a></p>
-			<p class="header__text">Работаем круглый год! Хранение продукции бесплатно!</p>
 		</div>
 		<div class="header__purchase">
+			<p class="header__text">Работаем круглый год!</p>
+			<p class="header__text">Хранение продукции бесплатно!</p>
 			<button class="purchase__link purchase__link--header" href="#">Оставить заявку</button>
 		</div>
 	</div>
@@ -59,17 +60,17 @@
 	<section class="content__wrapper">
 		<div class="submenu__left">
 			<ul class="submenu__left__list">
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">тротуарная плитка</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">фасадная, облицовочная плитка</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">камины и барбекю</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">ступени</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">вазоны из бетона</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">цветочницы для вертикального озеленения</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">садово-парковые лавочки</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">самосветящиеся фасады</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">памятники</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">парковочные ограждения</a></li>
-				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">матирующий крем</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Тротуарная плитка</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Фасадная, облицовочная плитка</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Камины и барбекю</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Ступени</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Вазоны из бетона</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Цветочницы для вертикального озеленения</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Садово-парковые лавочки</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Самосветящиеся фасады</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Памятники</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Парковочные ограждения</a></li>
+				<li class="submenu__left__list__element"><a class="submenu__list__element__link" href="#">Матирующий крем</a></li>
 			</ul>
 		</div>
 		<div class="content">
@@ -245,9 +246,18 @@
 				<div class="purchase__close"><i class="fas fa-times"></i></div>
 			</h2>
 			<form class="purchase__form">
-				<input class="purchase__input" type="text" placeholder="Ваш e-mail">
-				<input class="purchase__input" type="text" placeholder="Выбранное изделие">
-				<textarea class="purchase__textarea" placeholder="Ваше сообщение"></textarea>
+				<label>
+					<input class="purchase__input purchase__value" type="text">
+					<div class="purchase__form__placeholder">Ваш e-mail</div>
+				</label>
+				<label>
+					<input class="purchase__input purchase__value" type="text">
+					<div class="purchase__form__placeholder">Выбранное изделие</div>
+				</label>
+				<label>					
+					<textarea class="purchase__textarea purchase__value"></textarea>
+					<div class="purchase__form__placeholder purchase__form__placeholder--textarea">Ваше&nbsp;сообщение</div>
+				</label>
 				<button class="purchase__button purchase__link">Оставить заявку</button>
 			</form>
 		</div>
