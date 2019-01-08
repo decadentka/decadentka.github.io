@@ -21,6 +21,21 @@ a{
 	src: url('../fonts/Roboto-Bold.ttf');
 }
 
+@font-face{
+	font-family: 'FontAwesome';
+	src: url('../webfonts/fa-regular-400.ttf');
+}
+
+@font-face{
+	font-family: 'FontAwesome';
+	src: url('../webfonts/fa-solid-900.ttf');
+}
+
+@font-face{
+	font-family: 'FontAwesome';
+	src: url('../webfonts/fa-brands-400.ttf');
+}
+
 h1{
 	font-family: 'Roboto-Bold';
 	font-size:30px;
@@ -40,7 +55,7 @@ h2{
 	margin-right:10px;
 }
 .contacts__address:before{
-	content:'\f041';
+	content:'\f3c5';
 	font-family: FontAwesome;
 	width:30px;
 	height:30px;
@@ -131,7 +146,8 @@ header{
 .header__contacts{
 	float:right;
 	font-size:25px;
-	padding-bottom:30px;
+	padding:10px 0 40px;
+	line-height:35px;
 }
 
 .header__contacts__link{
@@ -146,11 +162,12 @@ header{
 	padding-top:10px;
 }
 .header__purchase{
-	float:left;
-	margin-left:40px;
+/*	float:left;
+	margin-left:40px;*/
+	text-align:center;
 }
 .purchase__link--header{
-	margin-top:40px;	
+	margin-top:20px;	
 	font-size:24px;
 }
 
@@ -596,6 +613,41 @@ header{
 	width:320px;
 	box-sizing:border-box;
 	margin-right:20px;
+	font-size:14px;
+}
+.purchase__form label{
+	position:relative;
+}
+.purchase__form__placeholder{
+	font-size:14px;
+	font-family:Roboto-Regular;
+	color:#564545;
+	transition:0.3s;
+	padding-left:20px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.purchase__input:focus + .purchase__form__placeholder{
+	transform:translateY(-15px);
+	font-size:12px;
+	transition:0.3s;
+}
+.value-exists + .purchase__form__placeholder{
+	transform: translateY(-15px);
+	font-size:12px;
+}
+.purchase__form__placeholder--textarea{
+	transform:translateY(-100px);
+	font-size:14px;
+}
+.purchase__textarea:focus + .purchase__form__placeholder--textarea{
+	transform:translateY(-115px);
+	font-size:12px;
+}
+.value-exists + .purchase__form__placeholder--textarea{
+	transform: translateY(-115px);
+	font-size:12px;
 }
 .purchase__textarea{
 	resize:none;
@@ -722,11 +774,12 @@ footer{
 @media all and (min-width: 960px) and (max-width: 1180px){
 	.header__purchase{
 		margin-left:0;
-		width:395px;
+	/*	width:395px;*/
 	}
 	.purchase__link--header{
 		display:block;
 		margin:20px auto;
+		font-size:20px;
 	}
 	.catalog__list__element{		
 		margin:20px 10px;
@@ -806,7 +859,7 @@ footer{
 	}
 	.purchase__link--header{
 		display:block;
-		margin:0 auto 30px;
+		margin:20px auto;
 		
 	}
 	.menu__list{
