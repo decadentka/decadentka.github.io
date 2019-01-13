@@ -1,0 +1,40 @@
+body{
+	padding:0;
+	margin: 0;
+	background: url('back.png') repeat;
+}
+h2, h3 {
+	color: #b22222;
+	margin-left: 20px;
+}
+.block {
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #b22222;
+	display: flex;
+}
+
+.right{
+	display: inline-block;
+}
+
+.img {
+	width:300px;
+	overflow:hidden;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.maket {
+	height: 100px;
+	border-bottom: 1px dotted #000;
+}
+  
+img {
+	width:300px;
+}
+  
+.maket:hover {
+	width:300px;
+	height:100%;
+}
