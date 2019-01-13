@@ -30,6 +30,7 @@ body{
     ) 0 0;
   background-size: 8rem 8rem;
   background-color: #F5FCD0;
+  background-attachment: fixed;
   font-family: 'Roboto-Regular';
 }
 h2{
