@@ -3,10 +3,14 @@ body{
 	margin: 0;
 	background: url('back.png') repeat;
 }
-h2, h3 {
+h2{
 	color: #b22222;
 	margin-left: 20px;
 }
+h3 {
+	margin-left: 20px;
+}
+
 .block {
 	padding: 20px;
 	margin: 20px;
@@ -28,6 +32,7 @@ h2, h3 {
 .maket {
 	height: 100px;
 	border-bottom: 1px dotted #000;
+	overflow: hidden;
 }
   
 img {
@@ -37,4 +42,5 @@ img {
 .maket:hover {
 	width:300px;
 	height:100%;
+	border:none;
 }
