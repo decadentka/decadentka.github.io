@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+	<title>Корзина</title>
+	<meta charset=utf-8>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>	
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<section class="cart__info">
+			<h1 class="cart__header">Корзина<span class="cart__amount">12</span></h1>
+			<p class="content cart__text">Организуйте тендер между выбранными компаниями. Приглашайте компании в новый или текущий тендер в один клик. Отобранные компании хранятся по отдельным вкладкам.</p>
+		</section>
+	</div>
+	<section class="cart__companies">
+		<div class="cart__companies__tabs__wrapper">
+			<ul class="cart__companies__tabs">
+				<li class="cart__companies__tab active">
+					<a>Разработка сайтов 7</a>
+				</li>
+				<li class="cart__companies__tab"><a>Поисковая оптимизация 3</a></li>
+				<li class="cart__companies__tab"><a>Разработка приложений 5</a></li>
+				<li class="cart__companies__tab"><a>Контекстная реклама 0</a></li>
+				<li class="cart__companies__tab"><a>Маркетинг, SMM, PR 0</a></li>
+			</ul>
+		</div>
+		<div class="cart__companies__list__wrapper active">
+	<table class="cart__companies__list tablesorter">
+		<thead>
+			<tr class="cart__companies__list__head">
+						<th class="cart__companies__list__head__column cart__company__in-tender"></th>
+						<th class="cart__companies__list__head__column cart__company__logo"></th>
+						<th class="cart__companies__list__head__column cart__company__name">Агентство</th>
+						<th class="cart__companies__list__head__column cart__company__city">Город</th>
+						<th class="cart__companies__list__head__column cart__company__price">Ценовой сегмент</th>
+						<th class="cart__companies__list__head__column cart__company__projects">Проектов</th>
+						<th class="cart__companies__list__head__column cart__company__age">Лет на рынке</th>
+			</tr>
+		</thead>
+		<tbody class="cart__companies__list__body">
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label class="cart__company__in-tender_label">
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/rns.png"></td>
+				<td class="cart__company__name"><p class="cart__company__pro">RuNetSoft</p></td>
+				<td class="cart__company__city"><p>Смоленск</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--2"></span>
+				</td>
+				<td class="cart__company__projects"><p>163</p></td>
+				<td class="cart__company__age"><span>8</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/klondaik.png"></td>
+				<td class="cart__company__name"><p class="cart__company__pro">Клондайк</p></td>
+				<td class="cart__company__city"><p>Москва</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--3"></span>
+				</td>
+				<td class="cart__company__projects"><p>281</p></td>
+				<td class="cart__company__age"><span>4</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/cetera.png"></td>
+				<td class="cart__company__name"><p class="cart__company__pro">Cetera Labs</p></td>
+				<td class="cart__company__city"><p>Ижевск</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--4"></span>
+				</td>
+				<td class="cart__company__projects"><p>30</p></td>
+				<td class="cart__company__age"><span>12</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/techno.png"></td>
+				<td class="cart__company__name"><p>Технологии успеха</p></td>
+				<td class="cart__company__city"><p>Минск</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--3"></span>
+				</td>						
+				<td class="cart__company__projects"><p>229</p></td>
+				<td class="cart__company__age"><span>3</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/uniweb.png"></td>
+				<td class="cart__company__name"><p>ЮниВеб</p></td>
+				<td class="cart__company__city"><p>Киев</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--2"></span>
+				</td>
+				<td class="cart__company__projects"><p>43</p></td>
+				<td class="cart__company__age"><span>5</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/sws.png"></td>
+				<td class="cart__company__name"><p>Seven Winds Studio</p></td>
+				<td class="cart__company__city"><p>Новороссийск</p></td>
+				<td>
+					<span class="cart__company__price__level--2"></span>
+				</td>
+				<td class="cart__company__projects"><p>17</p></td>
+				<td class="cart__company__age"><span>3</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/techno.png"></td>
+				<td class="cart__company__name"><p>Технологии успеха</p></td>
+				<td class="cart__company__city"><p>Минск</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--3"></span>
+				</td>
+				<td class="cart__company__projects"><p>229</p></td>
+				<td class="cart__company__age"><span>3</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/uniweb.png"></td>
+				<td class="cart__company__name"><p>ЮниВеб</p></td>
+				<td class="cart__company__city"><p>Киев</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--4"></span>
+				</td>
+				<td class="cart__company__projects"><p>64</p></td>
+				<td class="cart__company__age"><span>4</span></td>
+			</tr>
+			<tr class="cart__companies__list__body__row">
+				<td class="cart__company__in-tender">						
+					<label>
+						<input type="checkbox">
+						<span></span>
+					</label>						
+				</td>
+				<td class="cart__company__logo"><img src="img/rns.png"></td>
+				<td class="cart__company__name"><p>Бинн</p></td>
+				<td class="cart__company__city"><p>Новороссийск</p></td>
+				<td class="cart__company__price">
+					<span class="cart__company__price__level--2"></span>
+				</td>
+				<td class="cart__company__projects"><p>17</p></td>
+				<td class="cart__company__age"><span>3</span></td>
+			</tr>
+		</tbody>
+	</table>
+		</div>
+		<div class="cart__companies__list__wrapper">
+			<table class="cart__companies__list tablesorter">
+				<thead>
+					<tr class="cart__companies__list__head">
+						<th class="cart__companies__list__head__column cart__company__in-tender"></th>
+						<th class="cart__companies__list__head__column cart__company__logo"></th>
+						<th class="cart__companies__list__head__column cart__company__name">Агентство</th>
+						<th class="cart__companies__list__head__column cart__company__city">Город</th>
+						<th class="cart__companies__list__head__column cart__company__price">Ценовой сегмент</th>
+						<th class="cart__companies__list__head__column cart__company__projects">Проектов</th>
+						<th class="cart__companies__list__head__column cart__company__age">Лет на рынке</th>
+					</tr>
+				</thead>
+				<tbody class="cart__companies__list__body">
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/rns.png"></td>
+						<td class="cart__company__name"><p class="cart__company__pro">RuNetSoft</p></td>
+						<td class="cart__company__city"><p>Смоленск</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--2"></span>
+						</td>
+						<td class="cart__company__projects"><p>163</p></td>
+						<td class="cart__company__age"><span>8</span></td>
+					</tr>
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/klondaik.png"></td>
+						<td class="cart__company__name"><p class="cart__company__pro">Клондайк</p></td>
+						<td class="cart__company__city"><p>Москва</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--3"></span>
+						</td>
+						<td class="cart__company__projects"><p>281</p></td>
+						<td class="cart__company__age"><span>4</span></td>
+					</tr>
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/techno.png"></td>
+						<td class="cart__company__name"><p>Технологии успеха</p></td>
+						<td class="cart__company__city"><p>Минск</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--3"></span>
+						</td>						
+						<td class="cart__company__projects"><p>229</p></td>
+						<td class="cart__company__age"><span>3</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="cart__companies__list__wrapper">
+			<table class="cart__companies__list tablesorter">
+				<thead>
+					<tr class="cart__companies__list__head">
+						<th class="cart__companies__list__head__column cart__company__in-tender"></th>
+						<th class="cart__companies__list__head__column cart__company__logo"></th>
+						<th class="cart__companies__list__head__column cart__company__name">Агентство</th>
+						<th class="cart__companies__list__head__column cart__company__city">Город</th>
+						<th class="cart__companies__list__head__column cart__company__price">Ценовой сегмент</th>
+						<th class="cart__companies__list__head__column cart__company__projects">Проектов</th>
+						<th class="cart__companies__list__head__column cart__company__age">Лет на рынке</th>
+					</tr>
+				</thead>
+				<tbody class="cart__companies__list__body">
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/rns.png"></td>
+						<td class="cart__company__name"><p class="cart__company__pro">RuNetSoft</p></td>
+						<td class="cart__company__city"><p>Смоленск</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--2"></span>
+						</td>
+						<td class="cart__company__projects"><p>163</p></td>
+						<td class="cart__company__age"><span>8</span></td>
+					</tr>
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/klondaik.png"></td>
+						<td class="cart__company__name"><p class="cart__company__pro">Клондайк</p></td>
+						<td class="cart__company__city"><p>Москва</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--3"></span>
+						</td>
+						<td class="cart__company__projects"><p>281</p></td>
+						<td class="cart__company__age"><span>4</span></td>
+					</tr>
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/techno.png"></td>
+						<td class="cart__company__name"><p>Технологии успеха</p></td>
+						<td class="cart__company__city"><p>Минск</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--3"></span>
+						</td>						
+						<td class="cart__company__projects"><p>229</p></td>
+						<td class="cart__company__age"><span>3</span></td>
+					</tr>
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/techno.png"></td>
+						<td class="cart__company__name"><p>Технологии успеха</p></td>
+						<td class="cart__company__city"><p>Минск</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--3"></span>
+						</td>
+						<td class="cart__company__projects"><p>229</p></td>
+						<td class="cart__company__age"><span>3</span></td>
+					</tr>
+					<tr class="cart__companies__list__body__row">
+						<td class="cart__company__in-tender">						
+							<label>
+								<input type="checkbox">
+								<span></span>
+							</label>						
+						</td>
+						<td class="cart__company__logo"><img src="img/uniweb.png"></td>
+						<td class="cart__company__name"><p>ЮниВеб</p></td>
+						<td class="cart__company__city"><p>Киев</p></td>
+						<td class="cart__company__price">
+							<span class="cart__company__price__level--4"></span>
+						</td>
+						<td class="cart__company__projects"><p>64</p></td>
+						<td class="cart__company__age"><span>4</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="cart__companies__list__wrapper">
+			<div class="cart__companies__list__empty__img"></div>
+			<div class="cart__companies__list__empty">
+				Вы пока не добавили исполнителей по разработке сайтов.				
+			</div>
+			<a class="cart__companies__link">Выбрать из 1856 компаний</a>
+		</div>
+		<div class="cart__companies__list__wrapper">
+			<div class="cart__companies__list__empty__img"></div>
+			<div class="cart__companies__list__empty">
+				Вы пока не добавили исполнителей по разработке сайтов.				
+			</div>
+			<a class="cart__companies__link">Выбрать из 1856 компаний</a>
+		</div>
+	</section>
+	
+	<section class="wrapper">
+		<section class="sugested__companies__info">
+			<h2 class="sugested__companies__head">Добавьте еще исполнителей со средним бюджетом</h2>
+			<a class="cart__companies__link cart__companies__link__sugested">Смотреть всех из Смоленска</a>
+		</section>
+		<div class="sugested__companies">
+			<div class="sugested__company">
+				<div class="cart__company__logo"><img src="img/klondaik.png"></div>
+				<div class="cart__company__name"><p class="cart__company__pro">UNIQ Systems</p></div>
+				<span>Смоленск</span><br>
+				<span>Цены:</span> <span class="cart__company__price__level--3"></span><br>
+				<span>56 проектов</span><br>
+				<span>9 лет на рынке</span>
+				<div class="sugested__company__in-cart"></div>
+			</div>
+			<div class="sugested__company">
+				<div class="cart__company__logo"><img src="img/rns.png"></div>
+				<div class="cart__company__name">BraveRobin</div>
+				<span>Санкт-Петербург</span><br>
+				<span>Цены:</span> <span class="cart__company__price__level--3"></span><br>
+				<span>127 проектов</span><br>
+				<span>7 лет на рынке</span>
+				<div class="sugested__company__in-cart"></div>
+			</div>
+			<div class="sugested__company">
+				<div class="cart__company__logo"><img src="img/uniweb.png"></div>
+				<div class="cart__company__name"><p class="cart__company__pro">Napoleon IT</p></div>
+				<span>Челябинск</span><br>
+				<span>Цены:</span> <span class="cart__company__price__level--4"></span><br>
+				<span>154 проекта</span><br>
+				<span>10 лет на рынке</span>
+				<div class="sugested__company__in-cart"></div>
+			</div>
+			<div class="sugested__company">
+				<div class="cart__company__logo"><img src="img/techno.png"></div>
+				<div class="cart__company__name"><p class="cart__company__pro">Бинет</p></div>
+				<span>Москва</span><br>
+				<span>Цены:</span> <span class="cart__company__price__level--2"></span><br>
+				<span>98 проектов</span><br>
+				<span>8 лет на рынке</span>
+				<div class="sugested__company__in-cart"></div>
+			</div>
+		</div>		
+	</section>
+</body>
