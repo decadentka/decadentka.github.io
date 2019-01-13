@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'Roboto-Regular';
+	src: url('kamelit/fonts/Roboto-Regular.ttf');
+}
+
 body{
 	padding:0;
 	margin: 0;
@@ -25,11 +30,12 @@ body{
     ) 0 0;
   background-size: 8rem 8rem;
   background-color: #F5FCD0;
+  font-family: 'Roboto-Regular';
 }
 h2{
 	color: #000;
 	margin: 20px;
-	background: rgba(255,255,255, 0.9);
+	background: #fff;
     display: inline-block;
     padding: 10px;	
 }
@@ -73,10 +79,4 @@ h2 + .block {
   
 img {
 	width:300px;
-}
-  
-.maket:hover {
-	width:300px;
-	height:100%;
-	border:none;
 }
