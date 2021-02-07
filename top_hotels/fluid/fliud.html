@@ -1,0 +1,614 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Fluid</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset-ls.css" type="text/css">
+	<link rel="stylesheet" href="css/atom.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="css/b-header_1.css" type="text/css">
+	<link rel="stylesheet" href="css/b-footer.css" type="text/css">
+	<link rel="stylesheet" href="css/b-main.css" type="text/css">
+	<link rel="stylesheet" href="fonts/css/all.min.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			$('.contacts-city-wrap').on('click', function(){
+				$('.contacts-block.active').toggle();
+				$('.contacts-city-list').toggle();
+			});
+			
+			$('.contacts-city-list').children('li').on('click', function(){
+				$('.contacts-city-list').toggle();
+				if($(this).hasClass('contacts-city-list-1')) {
+					$('.contacts-block-1').show().addClass('active').siblings('.contacts-block').hide().removeClass('active');
+				}
+				if($(this).hasClass('contacts-city-list-2')) {
+					$('.contacts-block-2').show().addClass('active').siblings('.contacts-block').hide().removeClass('active');
+				}
+				if($(this).hasClass('contacts-city-list-3')) {
+					$('.contacts-block-3').show().addClass('active').siblings('.contacts-block').hide().removeClass('active');
+				}
+			
+				$('.contacts-city').text(($(this).children('.contacts-address-city').html()));
+			});
+		});
+    </script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-back">
+			
+			<svg class=""
+			 xmlns="http://www.w3.org/2000/svg"
+			 xmlns:xlink="http://www.w3.org/1999/xlink"
+			width="0" height="0">
+				<defs>
+				<clipPath id="clipping-head">
+				  <path fill-rule="evenodd" fill="rgb(0, 0, 0)" class="no-adaptive-480"
+	d="M39.011,350.895 C-14.079,457.101 -26.715,692.909 93.438,751.602 C213.591,810.295 275.166,747.779 406.496,739.394 C537.826,731.010 494.960,799.005 602.538,828.352 C710.117,857.698 763.323,809.763 863.916,830.725 C964.509,851.687 962.013,885.737 1078.105,910.017 C1195.874,934.648 1209.000,901.749 1209.000,901.749 L1188.630,8.839 C1188.630,8.839 987.194,-44.422 853.070,110.692 C718.946,265.808 539.598,181.061 419.445,168.484 C299.292,155.907 140.011,148.850 39.011,350.895 Z"/>
+	<path fill-rule="evenodd"  fill="rgb(0, 0, 0)" class="adaptive-only-480"
+			 d="M15.193,141.424 C-5.626,183.025 -10.581,275.389 36.537,298.379 C83.654,321.368 107.800,296.881 159.301,293.597 C210.801,290.313 207.992,316.947 250.178,328.441 C292.365,339.936 317.229,321.160 356.676,329.371 C396.124,337.581 377.145,350.919 422.670,360.429 C468.853,370.077 474.000,357.191 474.000,357.191 L466.012,7.443 C466.012,7.443 404.020,-22.419 351.423,38.338 C298.827,99.096 211.496,74.902 164.379,69.975 C117.262,65.049 54.800,62.284 15.193,141.424 Z"/>
+				</clipPath>
+			  </defs>
+			</svg>
+			<img class="header-back-img" src="img/banner.jpg" width="1209px" height="920px" style="clip-path: url(#clipping-head);">
+		</div>
+		
+		<div class="contacts">
+			<div class="wrapper relative">
+				<div class="contacts-city-wrap"><span class="contacts-city">г. Минск</span><i class="fas fa-chevron-down"></i></div>
+				<ul class="contacts-city-list">
+					<li class="contacts-city-list-1"><span class="contacts-address-city">г. Минск</span>, ул Репина, 4</li>
+					<li class="contacts-city-list-2"><span class="contacts-address-city">г. Гродно</span>, пр-т Космонавтов</li>
+					<li class="contacts-city-list-3"><span class="contacts-address-city">г. Гродно</span>, ул.Виленская</li>
+				</ul>
+				<div class="contacts-block contacts-block-1 clearfix active">
+					<div class="contacts-phones">
+						<div class="contacts-phone">+375 (17) 373 43 43</div>
+						<div class="contacts-phone">+375 (17) 377 43 43</div>
+						<div class="contacts-phone">+375 (29) 863 43 43</div>
+					</div>
+					<div class="contacts-address">
+						г. Минск, ул Репина, 4, пом. 467
+						<a class="contacts-mail" href="mailto:ostrovoktravel@mail.ru">ostrovoktravel@mail.ru</a>
+					</div>
+				</div>
+				<div class="contacts-block contacts-block-2 clearfix">
+					<div class="contacts-phones">
+						<div class="contacts-phone">+375 152 71 34 34</div>
+						<div class="contacts-phone">+375 33 902 43 43</div>
+						<div class="contacts-phone">+375 29 587 43 43</div>
+					</div>
+					<div class="contacts-address">
+						г. Гродно, пр-т Космонавтов, 81а (рядом с гипермаркетом КОРОНА)
+						<a class="contacts-mail" href="mailto:ostrovoktravel@mail.ru">ostrovoktravel@mail.ru</a>
+					</div>
+				</div>
+				<div class="contacts-block contacts-block-3 clearfix">
+					<div class="contacts-phones">
+						<div class="contacts-phone">+375 152 44 34 34</div>
+						<div class="contacts-phone">+375 33 664 43 43</div>
+					</div>
+					<div class="contacts-address">
+						г. Гродно, ул.Виленская, 1-6
+						<a class="contacts-mail" href="mailto:ostrovoktravel@mail.ru">ostrovoktravel@mail.ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main-info wrapper clearfix">
+		
+			<div class="header-logo">
+				<a class="header-logo-link" href="#"><img src="img/logo.png" title="MyAdventure" alt="MyAdventure"></a>
+			</div>
+			<div class="social">
+				<ul class="social-list">
+					<li class="social-list-element"><a class="social-list-element-link social-list-element-link--vk" href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+					<li class="social-list-element"><a class="social-list-element-link social-list-element-link--fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="social-list-element"><a class="social-list-element-link social-list-element-link--tw" href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li class="social-list-element"><a class="social-list-element-link social-list-element-link--in" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="social-list-element"><a class="social-list-element-link social-list-element-link--ok" href="#" target="_blank"><i class="fab fa-odnoklassniki"></i></a></li>
+				</ul>
+			</div>			
+			<div class="top-menu wrapper">
+				<input id="menu-btn" type="checkbox">
+				<label for="menu-btn" class="menu-btn"><img class="label-menu-bar" src="img/menu.png"><img class="label-menu-cross" src="img/close.png"></label>
+				<div class="top-menu-list-wrap">
+					<ul class="menu-list">
+						<li class="menu-list-element"><a class="menu-list-element-link" href="#">О компании</a></li>
+						<li class="menu-list-element"><a class="menu-list-element-link" href="#">Поиск туров</a></li>
+						<li class="menu-list-element"><a class="menu-list-element-link" href="#">Горящие туры</a></li>
+						<li class="menu-list-element"><a class="menu-list-element-link" href="#">Наши услуги</a>
+							<ul class="submenu-list">
+								<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>оформление визы</nobr></a></li>
+								<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>заказать трансфер</nobr></a></li>
+								<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>авиабилеты</nobr></a></li>
+								<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>железнодорожные билеты</nobr></a></li>
+							</ul>
+						</li>
+						<li class="menu-list-element"><a class="menu-list-element-link" href="#">Страны</a></li>
+						<li class="menu-list-element"><a class="menu-list-element-link" href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="banner">
+				<div class="banner-text-title">Простая формула лучшего отдыха!</div>
+				<div class="banner-text">Найдите лучший тур прямо сейчас</div>
+				<a href="#" class="banner-button">Подобрать тур</a>
+			</div>
+			<div class="tours-search-form"><img src="i/poisk.png"></div>
+		</div>
+	</header>
+	
+	<div class="section wrapper">
+		<h2 class="section-header">Наши услуги</h2>
+		<ul class="services-list clearfix">
+			<li class="services-list-item">
+				<a href="#" class="services-list-item-link">
+					<svg 
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" width="0"
+					 >
+					  <defs>
+						<clipPath id="clipping">
+						  <path fill-rule="evenodd" 
+					 d="M13.196,72.049 C36.574,20.489 81.370,-8.328 116.265,2.957 C151.160,14.240 133.197,54.370 163.158,73.113 C193.120,91.857 217.397,82.714 237.431,100.254 C257.465,117.793 249.277,185.299 208.904,202.563 C168.532,219.828 155.238,179.936 116.522,175.241 C77.806,170.545 66.402,206.433 32.499,195.270 C-1.403,184.106 -10.183,123.609 13.196,72.049 Z"/>
+						</clipPath>
+					  </defs>
+					</svg>
+
+					<img class="services-list-item-img" src="i/service-visa.jpg" width="248px" height="207px" style="clip-path: url(#clipping); transform: translateX(-124px);">
+					<svg class="services-list-item-hover"
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink"
+					 width="306px" height="264px" style="top: 100px;">
+					<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(224, 224, 232)" fill-opacity="0" fill="rgb(246, 70, 69)"
+					 d="M280.076,259.328 C246.077,265.329 180.334,228.568 129.171,237.717 C78.008,246.864 10.500,260.498 4.500,203.499 C-1.500,146.499 35.500,104.498 72.500,55.499 C156.500,-29.501 234.500,8.499 225.500,46.499 C216.500,84.498 196.094,80.369 254.094,137.369 C312.094,194.368 314.076,253.329 280.076,259.328 Z"/>
+					</svg>
+					
+					<div class="services-list-item-wrap">
+						<div class="services-list-item-title">Оформление визы</div>
+						<div class="services-list-item-desc">Если вас интересует быстрое оформление шенгенской, мы готовы вам помочь.</div>
+					</div>
+					
+				</a>
+			</li>
+			
+			<li class="services-list-item">
+				<a href="#" class="services-list-item-link">
+				<svg 
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" width="0"
+					 >
+					  <defs>
+						<clipPath id="clipping2">
+						  <path fill-rule="evenodd" 
+							d="M63.000,211.999 C95.276,244.321 164.396,234.136 182.396,208.136 C200.396,182.136 193.000,173.999 185.000,125.999 C177.000,77.998 202.000,87.999 194.000,40.999 C186.000,-6.001 137.000,-14.001 104.000,26.999 C71.000,67.999 -9.000,29.998 2.000,85.999 C13.000,141.998 72.000,105.998 80.000,144.999 C88.000,183.999 31.023,179.976 63.000,211.999 Z"/>
+						</clipPath>
+					  </defs>
+					</svg>
+
+					<img class="services-list-item-img" src="i/service-avia.jpg" width="194px" height="231px" style="clip-path: url(#clipping2); transform: translateX(-97px);">
+					<svg class="services-list-item-hover"
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink"
+					 width="325px" height="289px">
+					<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(224, 224, 232)" fill-opacity="0" fill="rgb(246, 70, 69)"
+					d="M163.041,12.710 C221.534,31.458 169.123,80.357 207.163,115.772 C245.203,151.190 339.742,171.625 320.810,223.801 C301.878,275.978 254.429,266.280 213.433,263.094 C172.436,259.908 169.923,265.450 108.923,284.450 C47.923,303.450 -16.309,246.044 10.691,202.045 C37.691,158.044 86.910,176.942 73.112,87.733 C59.314,-1.477 104.548,-6.037 163.041,12.710 Z"/>
+					</svg>
+					
+					<div class="services-list-item-wrap">
+						<div class="services-list-item-title">Авиабилеты</div>
+						<div class="services-list-item-desc">Бронируйте авиабилеты заранее, как минимум, за 2-3 месяца до вылета.</div>
+					</div>
+				</a>
+			</li>
+			<li class="services-list-item">
+				<a href="#" class="services-list-item-link">
+					<svg 
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" width="0"
+					 >
+					  <defs>
+						<clipPath id="clipping">
+						  <path fill-rule="evenodd" 
+					 d="M13.196,72.049 C36.574,20.489 81.370,-8.328 116.265,2.957 C151.160,14.240 133.197,54.370 163.158,73.113 C193.120,91.857 217.397,82.714 237.431,100.254 C257.465,117.793 249.277,185.299 208.904,202.563 C168.532,219.828 155.238,179.936 116.522,175.241 C77.806,170.545 66.402,206.433 32.499,195.270 C-1.403,184.106 -10.183,123.609 13.196,72.049 Z"/>
+						</clipPath>
+					  </defs>
+					</svg>
+
+					<img class="services-list-item-img" src="i/service-train.jpg" width="218px" height="217px" style="clip-path: url(#clipping); transform: translateX(-109px);">
+					<svg class="services-list-item-hover"
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink"
+					 width="306px" height="264px" style="top: 100px;">
+					<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(224, 224, 232)" fill-opacity="0" fill="rgb(246, 70, 69)"
+					 d="M280.076,259.328 C246.077,265.329 180.334,228.568 129.171,237.717 C78.008,246.864 10.500,260.498 4.500,203.499 C-1.500,146.499 35.500,104.498 72.500,55.499 C156.500,-29.501 234.500,8.499 225.500,46.499 C216.500,84.498 196.094,80.369 254.094,137.369 C312.094,194.368 314.076,253.329 280.076,259.328 Z"/>
+					</svg>
+					
+					<div class="services-list-item-wrap">
+						<div class="services-list-item-title">Железнодорожные билеты</div>
+						<div class="services-list-item-desc">Мы гарантируем выгодные цены на ж/д билеты!</div>
+					</div>
+					
+				</a>
+			</li>
+			
+			<li class="services-list-item">
+				<a href="#" class="services-list-item-link">
+				<svg 
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" width="0"
+					 >
+					  <defs>
+						<clipPath id="clipping2">
+						  <path fill-rule="evenodd" 
+							d="M63.000,211.999 C95.276,244.321 164.396,234.136 182.396,208.136 C200.396,182.136 193.000,173.999 185.000,125.999 C177.000,77.998 202.000,87.999 194.000,40.999 C186.000,-6.001 137.000,-14.001 104.000,26.999 C71.000,67.999 -9.000,29.998 2.000,85.999 C13.000,141.998 72.000,105.998 80.000,144.999 C88.000,183.999 31.023,179.976 63.000,211.999 Z"/>
+						</clipPath>
+					  </defs>
+					</svg>
+
+					<img class="services-list-item-img" src="i/service-transfer.jpg" width="238px" height="228px" style="clip-path: url(#clipping2); transform: translateX(-119px);">
+					<svg class="services-list-item-hover"
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink"
+					 width="325px" height="289px">
+					<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(224, 224, 232)" fill-opacity="0" fill="rgb(246, 70, 69)"
+					d="M163.041,12.710 C221.534,31.458 169.123,80.357 207.163,115.772 C245.203,151.190 339.742,171.625 320.810,223.801 C301.878,275.978 254.429,266.280 213.433,263.094 C172.436,259.908 169.923,265.450 108.923,284.450 C47.923,303.450 -16.309,246.044 10.691,202.045 C37.691,158.044 86.910,176.942 73.112,87.733 C59.314,-1.477 104.548,-6.037 163.041,12.710 Z"/>
+					</svg>
+					
+					<div class="services-list-item-wrap">
+						<div class="services-list-item-title">Заказать трансфер</div>
+						<div class="services-list-item-desc">Мы предлагаем услуги по организации пассажирских перево</div>
+					</div>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<div class="section directions">
+		<div class="wrapper">
+			<h2 class="section-header">Отдых по направлениям</h2>
+			<ul class="directions-list clearfix">
+				<li class="directions-list-item">
+					<a href="#" class="directions-list-item-link">
+						<svg class="directions-list-item-svg"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 >
+						  <defs>
+							<clipPath id="clipping5">
+							  <path fill-rule="evenodd" width="245px" height="236px"
+								d="M0.659,134.916 C-0.332,74.426 28.039,4.658 85.039,0.657 C142.039,-3.343 90.566,56.982 156.009,70.865 C221.453,84.748 257.045,129.294 241.180,164.993 C225.315,200.692 189.849,161.186 127.380,171.103 C64.911,181.019 110.586,228.756 75.402,234.763 C40.218,240.770 1.651,195.406 0.659,134.916 Z"/>
+							</clipPath>
+						  </defs>
+						</svg>
+
+						<img class="directions-list-item-img" title="Пляжный отдых" alt="Пляжный отдых" src="i/dir-beach.jpg" height="auto" style="clip-path: url(#clipping5); transform: translateX(-122.5px);">
+						
+						<div class="directions-list-item-title">Пляжный отдых</div>
+					</a>
+				</li>
+				
+				<li class="directions-list-item">
+					<a href="#" class="directions-list-item-link">						
+						<svg class="directions-list-item-svg"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 >
+						  <defs>
+							<clipPath id="clipping6">
+							  <path fill-rule="evenodd" width="256px" height="225px" 
+								d="M59.126,17.432 C138.126,31.432 165.398,-14.865 195.735,5.742 C241.181,36.613 177.879,56.708 192.506,85.987 C208.300,117.602 231.685,121.616 246.567,143.696 C262.249,166.962 266.259,190.723 192.303,217.842 C116.266,245.725 149.335,181.634 109.731,151.567 C78.669,127.984 46.037,161.371 20.807,136.124 C-4.422,110.875 -19.874,3.432 59.126,17.432 Z"/>
+							</clipPath>
+						  </defs>
+						</svg>
+						
+						<img class="directions-list-item-img" title="Горнолыжные туры" alt="Горнолыжные туры" src="i/dir-mountain.jpg" height="auto" style="clip-path: url(#clipping6); transform: translateX(-128px);">
+						
+						<div class="directions-list-item-title">Горнолыжные туры</div>
+					</a>
+				</li>
+				
+				<li class="directions-list-item">
+					<a href="#" class="directions-list-item-link">
+						<svg class="directions-list-item-svg"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 >
+						  <defs>
+							<clipPath id="clipping5">
+							  <path fill-rule="evenodd" width="245px" height="236px"
+								d="M0.659,134.916 C-0.332,74.426 28.039,4.658 85.039,0.657 C142.039,-3.343 90.566,56.982 156.009,70.865 C221.453,84.748 257.045,129.294 241.180,164.993 C225.315,200.692 189.849,161.186 127.380,171.103 C64.911,181.019 110.586,228.756 75.402,234.763 C40.218,240.770 1.651,195.406 0.659,134.916 Z"/>
+							</clipPath>
+						  </defs>
+						</svg>
+
+						<img class="directions-list-item-img" title="Экскурсионные туры" alt="Экскурсионные туры" src="i/dir-excurse.jpg" height="auto" style="clip-path: url(#clipping5); transform: translateX(-128px); object-position: left;">
+						
+						<div class="directions-list-item-title">Экскурсионные туры</div>
+					</a>
+				</li>
+				
+				<li class="directions-list-item">
+					<a href="#" class="directions-list-item-link">
+						<svg class="directions-list-item-svg"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 >
+						  <defs>
+							<clipPath id="clipping6">
+							  <path fill-rule="evenodd" width="256px" height="225px" 
+								d="M59.126,17.432 C138.126,31.432 165.398,-14.865 195.735,5.742 C241.181,36.613 177.879,56.708 192.506,85.987 C208.300,117.602 231.685,121.616 246.567,143.696 C262.249,166.962 266.259,190.723 192.303,217.842 C116.266,245.725 149.335,181.634 109.731,151.567 C78.669,127.984 46.037,161.371 20.807,136.124 C-4.422,110.875 -19.874,3.432 59.126,17.432 Z"/>
+							</clipPath>
+						  </defs>
+						</svg>
+
+						<div class="" style="text-align: center;">
+							<img class="directions-list-item-img" title="Семейный отдых" alt="Семейный отдых" src="i/dir-family.jpg" height="auto" style="clip-path: url(#clipping6); transform: translateX(-102.5px); object-position: left;">
+						</div>
+						
+						
+						<div class="directions-list-item-title">Семейный отдых</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div class="section wrapper">
+		<h2 class="section-header">Лучшие предложения</h2>
+		<div class="best-tours"><img src="i/best.png"></div>
+	</div>
+	
+	<div class="request section">
+		<div class="wrapper relative clearfix">
+			<div class="request-info">
+				<h2 class="request-title">Не нашли подходящий тур?</h2>
+				<div class="request-text">Заполните заявку на подбор тура прямо сейчас!</div>
+			</div>
+			<div class="tours-request-block">
+				<form class="tours-request-form">
+					<div class="tours-request-form-item pb20">
+						<label for="name" class="tours-request-form-label">ФИО</label>
+						<input id="name" class="tours-request-form-input" type="text" placeholder="Как к вам обращаться?">
+					</div>
+					<div class="tours-request-form-item pb20">
+						<label for="phone" class="tours-request-form-label">Телефон</label>
+						<input id="phone" class="tours-request-form-input" type="tel" placeholder="+7 (___) ___-__-__">
+					</div>
+					<div class="tours-request-form-item">
+						<label for="email" class="tours-request-form-label">E-mail</label>
+						<input id="email" class="tours-request-form-input" type="text" placeholder="Контактный e-mail">
+					</div>
+					<div class="tours-request-form-submit">
+						<input class="request-button" type="submit" value="свяжитесь со мной">
+					</div>
+				</form>
+				<div class="tours-request-agreement">Нажимая на кнопку «СВЯЖИТЕСЬ СО МНОЙ», вы принимаете <a href="#">«Соглашение об обработке персональных данных»</a> и подтверждаете, что ознакомлены с <a href="#">«Политикой конфиденциальности»</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section wrapper">
+		<h2 class="section-header">Путешествия по странам</h2>
+		<ul class="countries-list clearfix">
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/russia.jpg" class="countries-list-item-img" title="Россия" alt="Россия" width="120" height="80">
+					<div class="countries-list-item-title">Россия</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/vietnam.jpg" class="countries-list-item-img" title="Вьетнам" alt="Вьетнам" width="120" height="80">
+					<div class="countries-list-item-title">Вьетнам</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/greece.jpg" class="countries-list-item-img" title="Греция" alt="Греция" width="120" height="80">
+					<div class="countries-list-item-title">Греция</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/dominicana.jpg" class="countries-list-item-img" title="Доминикана" alt="Доминикана" width="120" height="80">
+					<div class="countries-list-item-title">Доминикана</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/egypt.jpg" class="countries-list-item-img" title="Египет" alt="Египет" width="120" height="80">
+					<div class="countries-list-item-title">Египет</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/italy.jpg" class="countries-list-item-img" title="Италия" alt="Италия" width="120" height="80">
+					<div class="countries-list-item-title">Италия</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/thailand.jpg" class="countries-list-item-img" title="Тайланд" alt="Тайланд" width="120" height="80">
+					<div class="countries-list-item-title">Тайланд</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/spain.jpg" class="countries-list-item-img" title="Испания" alt="Испания" width="120" height="80">
+					<div class="countries-list-item-title">Испания</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/czech.jpg" class="countries-list-item-img" title="Чехия" alt="Чехия" width="120" height="80">
+					<div class="countries-list-item-title">Чехия</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/germany.jpg" class="countries-list-item-img" title="Германия" alt="Германия" width="120" height="80">
+					<div class="countries-list-item-title">Германия</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/china.jpg" class="countries-list-item-img" title="Китай" alt="Китай" width="120" height="80">
+					<div class="countries-list-item-title">Китай</div>
+				</a>
+			</li>
+			<li class="countries-list-item">
+				<a href="#" class="countries-list-item-link">
+					<img src="i/turkey.jpg" class="countries-list-item-img" title="Турция" alt="Турция" width="120" height="80">
+					<div class="countries-list-item-title">Турция</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="section company">
+		<div class="wrapper">
+			<div class="about-company">
+				<div class="about-company-text">
+					<h2 class="section-header section-header-company">О компании</h2>
+					<p>Наша туристическая компания занимается организацией и продажей туров по России и странам СНГ а так же за границу с вылетами из Москвы и других регионов России. Принципом деятельности компании является стремление к совершенствованию существующих программ и предложений, тщательная проработка туристического продукта на каждом этапе его формирования и реализация с учетом накопленного опыта, пожеланий клиентов, принимая во внимание условия динамично формирующегося рынка туристских услуг. Предметом деятельности компании является оказание услуг в сфере туризма, обеспечения отдыха и лечения в санаториях, профилакториях, в здравницах, в курортных зонах Сочи и Анапы, Крыма и Абхазии и других знаменитых курортах России и странах СНГ.</p>
+				</div>
+				<a href="#" class="about-company-more">Читать подробнее</a>
+			</div>
+		</div>
+			</div>
+	
+	<div class="section wrapper">
+		<h2 class="section-header">Новости</h2>
+		<div class="news"><img src="i/news.png"></div>
+		<a href="#" class="banner-button news-all">Читать все новости</a>
+	</div>
+	
+	<footer class="footer">
+		
+		<div class="wrapper">
+			<div class="footer-top clearfix">
+				<div class="bottom-menu-adaptive">
+					<input id="bottom-menu-btn" type="checkbox">
+					<label for="bottom-menu-btn" class="bottom-menu-btn"><img class="label-menu-bar" src="img/menu.png"><img class="label-menu-cross" src="img/close.png"></label>
+					
+					<div class="bottom-menu-list-wrap">
+						<div class="bottom-block">
+							<div class="bottom-menu">
+								<h3 class="footer-title">Информация</h3>
+								<ul class="menu-list">
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#">О компании</a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#">Поиск туров</a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#">Горящие туры</a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#">Наши услуги</a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#">Страны и направления</a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom-block">
+							<div class="bottom-menu">
+								<h3 class="footer-title">Наши услуги</h3>
+								<ul class="menu-list">
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Оформление визы</nobr></a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Заказать трансфер</nobr></a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Авиабилеты</nobr></a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Железнодорожные билеты</nobr></a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="bottom-block">
+							<div class="bottom-menu">
+								<h3 class="footer-title">Отдых по направлениям</h3>
+								<ul class="menu-list">
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Пляжный отдых</nobr></a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Горнолыжные курорты</nobr></a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Экскурсионные туры</nobr></a></li>
+									<li class="menu-list-element"><a class="menu-list-element-link" href="#"><nobr>Семейный отдых</nobr></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="bottom-block-right">
+					<div class="contacts-city-wrap"><span class="contacts-city">г. Минск</span><i class="fas fa-chevron-down"></i></div>
+					<ul class="contacts-city-list">
+						<li class="contacts-city-list-1"><span class="contacts-address-city">г. Минск</span>, ул Репина, 4</li>
+						<li class="contacts-city-list-2"><span class="contacts-address-city">г. Гродно</span>, пр-т Космонавтов</li>
+						<li class="contacts-city-list-3"><span class="contacts-address-city">г. Гродно</span>, ул.Виленская</li>
+					</ul>
+					<div class="contacts-block contacts-block-1 clearfix active">
+						<div class="contacts-phones">
+							<div class="contacts-phone">+375 (17) 373 43 43</div>
+							<div class="contacts-phone">+375 (17) 377 43 43</div>
+							<div class="contacts-phone">+375 (29) 863 43 43</div>
+						</div>
+						<div class="contacts-address">
+							г. Минск, ул Репина, 4, пом. 467
+							<a class="contacts-mail" href="mailto:ostrovoktravel@mail.ru">ostrovoktravel@mail.ru</a>
+						</div>
+					</div>
+					<div class="contacts-block contacts-block-2 clearfix">
+						<div class="contacts-phones">
+							<div class="contacts-phone">+375 152 71 34 34</div>
+							<div class="contacts-phone">+375 33 902 43 43</div>
+							<div class="contacts-phone">+375 29 587 43 43</div>
+						</div>
+						<div class="contacts-address">
+							г. Гродно, пр-т Космонавтов, 81а (рядом с гипермаркетом КОРОНА)
+							<a class="contacts-mail" href="mailto:ostrovoktravel@mail.ru">ostrovoktravel@mail.ru</a>
+						</div>
+					</div>
+					<div class="contacts-block contacts-block-3 clearfix">
+						<div class="contacts-phones">
+							<div class="contacts-phone">+375 152 44 34 34</div>
+							<div class="contacts-phone">+375 33 664 43 43</div>
+						</div>
+						<div class="contacts-address">
+							г. Гродно, ул.Виленская, 1-6
+							<a class="contacts-mail" href="mailto:ostrovoktravel@mail.ru">ostrovoktravel@mail.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="footer-bottom">
+				<div class="footer-social">
+					<ul class="social-list">
+						<li class="social-list-element"><a class="social-list-element-link social-list-element-link--vk" href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+						<li class="social-list-element"><a class="social-list-element-link social-list-element-link--fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="social-list-element"><a class="social-list-element-link social-list-element-link--tw" href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+						<li class="social-list-element"><a class="social-list-element-link social-list-element-link--in" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li class="social-list-element"><a class="social-list-element-link social-list-element-link--ok" href="#" target="_blank"><i class="fab fa-odnoklassniki"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer-copyright">© Туристическое агентство VacationTour, 2018. Все права защищены.<br>
+					<a class="footer-developer" href="">Touradmin — разработка туристических сайтов</a>
+				</div>
+				<div class="footer-counter">
+					<img src="i/counter.jpg">
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+</body>
+</html>
