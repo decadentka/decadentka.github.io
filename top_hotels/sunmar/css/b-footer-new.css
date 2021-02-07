@@ -1,0 +1,161 @@
+.map {
+	height: 300px;
+}
+
+.footer-block {
+	-webkit-box-align: start;
+		-ms-flex-align: start;
+			align-items: flex-start;
+    padding: 20px 0 0;
+}
+
+/*Logo*/
+
+.footer-block .logo {
+    vertical-align: top;
+	margin-right: 0;
+}
+
+/*Contacts*/
+
+.footer-block .contacts {
+	display: inline-block;
+    vertical-align: top;
+	text-align: center;
+	margin: 0 50px;
+}
+
+.footer-block .contacts-phones {
+    display: block;
+	margin-left: 0;
+	margin-bottom: 6px;
+}
+
+.footer-block .contacts-mail {
+    display: block;
+    color: #9b9b9b;
+	margin-bottom: 3px;
+}
+
+.footer-block .contacts-address {
+    display: block;
+    color: #9b9b9b;
+}
+
+/*Social*/
+
+.header .social-list-item--wa .social-list-item-link {
+	color: #075e54;
+}
+
+.header .social-list-item--in .social-list-item-link {
+	color: #c72590;
+}
+
+.footer .social {
+	bottom: 10px;
+	z-index: 10;
+}
+
+.footer .social-list-item--wa:hover .social-list-item-link {
+	background: #075e54;
+	border-color: #075e54;
+}
+
+/*Request*/
+
+.request-link {
+	display: inline-block;
+	vertical-align: top;
+    font-size: 14px;
+    line-height: 45px;
+    color: #fff;
+    background: #d8232a;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 41px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.request-link:hover {
+	color: #fff;
+    background: #0e2855;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/*Counter*/
+
+.footer-counter {
+	margin-right: 128px;
+	margin-left: 255px;
+}
+
+@media screen and (max-width: 1200px){
+	
+	/*Request*/
+	
+	.request-link {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	
+	.footer-block {
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
+	}
+	
+	/*Logo*/
+	
+	.footer-block .logo {
+		margin-bottom: 10px;
+	}
+	
+	/*Contacts*/
+	
+	.contacts {
+		margin: 10px 0;
+	}
+	
+	/*Request*/
+	
+	.request-link {
+		margin: 10px 0;
+	}
+	
+	/*Social*/
+	
+	.footer .social {
+		display: block;
+		position: unset;
+		margin: 10px 0;
+	}
+	
+	.footer .social-list {
+		justify-content: center;
+	}
+	
+	/*Copyright*/
+	
+	.footer-copyright {
+		margin: 0 0 10px;
+	}
+	
+	.footer-developer {
+		margin-right: 20px;
+	}
+	
+	/*Counter*/
+	
+	.footer-counter {
+		margin: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+}

@@ -1,0 +1,74 @@
+body {
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: #353535;
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl_100.otf');
+	src: local('MuseoSansCyrl-100'),
+		 url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl-100.woff') format('woff');
+	font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl_300.otf');
+	src: local('MuseoSansCyrl-300'),
+		 url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl_500.otf');
+	src: local('MuseoSansCyrl-500'),
+		 url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+	font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl_700.otf');
+	src: local('MuseoSansCyrl-700'),
+		 url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+	font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl_900.otf');
+	src: local('MuseoSansCyrl-900'),
+		 url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl-900.woff') format('woff');
+	font-weight: 900;
+    font-style: normal;
+}
+
+.wrapper {
+	max-width: 1370px;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1400px) {
+	.wrapper {
+		margin: 0 20px;
+	}
+}
