@@ -1,0 +1,67 @@
+body {
+	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #babdc6;
+	background: #37383b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+input, select, textarea {
+    font: inherit;
+	color: inherit;
+    background: #28292c;
+    border: none;
+	padding: 16px 24px;
+}
+
+input {
+	border-radius: 3px;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: local('HelveticaNeueCyr Roman'), local('MagistralC-Roman'), url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.otf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: local('HelveticaNeueCyr Bold'), local('HelveticaNeueCyr-Bold'), url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.otf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 1380px) {
+	.wrapper {
+		margin: 0 40px 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.wrapper {
+		margin: 0 20px 0;
+	}
+}

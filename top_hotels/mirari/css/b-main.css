@@ -1,0 +1,548 @@
+
+.section {
+	padding-top: 106px;
+	padding-bottom: 164px;
+	overflow: hidden;
+}
+
+.link {
+	display: block;
+	font-size: 20px;
+	line-height: 59px;
+	color: #000;
+	background: #ff962c;
+	width: 246px;
+	height: 59px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 2px;
+	box-shadow: 0 4px 0 0 #c8741f;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.link:hover {
+	color: #37383b;
+	background: #fff;
+	box-shadow: 0 4px 0 0 #ff962c;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+/*Titles*/
+
+.section-title {
+	font-size: 44px;
+	line-height: 43px;
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 126px;
+}
+
+/*Search form*/
+
+.search-form {
+	width: 100%;
+	max-width: 964px;
+	position: absolute;
+	top: -451px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.search-form .section-title {
+	display: none;
+	padding-bottom: 0;
+}
+
+/*Countries*/
+
+.countries {
+	overflow: hidden;
+    width: 100%;
+}
+
+.countries-list {
+	display: block;
+	margin-bottom: 182px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.countries-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 295px;
+	text-align: center;
+}
+
+.countries-item-link {
+	display: block;
+	width: 295px;
+	margin: 0 auto;
+}
+
+.countries-item-img {
+	width: 100%;
+	max-width: 295px;
+    height: 193px;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 32px;
+}
+
+.countries-item-title {
+	font-size: 23px;
+	color: #fff;
+}
+
+.countries-item-text {
+	color: #babdc6;
+	max-width: 295px;
+}
+
+.countries-item-link:hover .countries-item-title,
+.countries-item-link:hover .countries-item-text {
+	  text-shadow: 1px 1px 10px #000;
+}
+
+.countries-list .arrow {
+	top: 70px;
+}
+
+/*Tours slider*/
+
+.tours {
+	width: 100%;
+	max-width: 980px;
+	margin: 182px auto 0;
+}
+
+/*Services*/
+
+.services {
+	padding-top: 106px;
+	padding-bottom: 164px;
+}
+
+.services-item {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.services-item-img {
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+	width: 650px;
+	max-width: 50%;
+    height: 452px;
+	background-position: center center;
+	background-size: cover;
+}
+
+.services-item:nth-child(2n + 1) .services-item-img {
+	-webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+}
+
+.services-item-desc {
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	width: 650px;
+	max-width: 50%;
+	padding: 60px 80px 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.services-item:nth-child(2n + 1) .services-item-desc {
+	padding-left: 55px;
+}
+
+.services-item-title {
+	font-size: 25px;
+	margin-bottom: 34px;
+}
+
+.services-item-text {
+	line-height: 29px;
+	margin-bottom: 38px;
+}
+
+.services .link {
+	margin: 0;
+}
+
+/*Hot tours*/
+
+.hot-wrapper {
+	width: 100%;
+	max-width: 1258px;
+}
+
+/*Reviews*/
+
+.reviews-list {
+    width: 100%;
+	max-width: 1400px;
+    overflow: hidden;
+	position: relative;
+}
+
+.reviews-item-list {
+	display: block;
+}
+
+.reviews-item {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 25px;
+	text-align: center;
+}
+
+.reviews-item-link {
+	display: block;
+	max-width: 340px;
+	margin: 0 auto;
+}
+
+.reviews-item-img {
+	display: inline-block;
+	width: 289px;
+    height: 289px;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 29px;
+}
+
+.reviews-item-title {
+	font-size: 23px;
+	color: #fff;
+}
+
+.reviews-item-text {
+	display: inline;
+	font-size: 15px;
+	color: #babdc6;
+	position: relative;
+}
+
+.reviews-item-link:hover .reviews-item-title,
+.reviews-item-link:hover .reviews-item-text {
+	  text-shadow: 1px 1px 10px #000;
+}
+
+.reviews-item-text:before, 
+.reviews-item-text:after {
+	display: inline;
+	font-family: 'TimesNewRoman';
+	font-size: 105px;
+	line-height: 33px;
+	color: rgba(35, 35, 38, 0.3);
+	position: absolute;
+	z-index: -1;
+}
+
+.reviews-item-text:before {
+	content: '“';
+    top: 15px;
+	left: -30px;
+}
+
+.reviews-item-text:after {
+	content: '”';
+    bottom: -30px;
+	right: -25px;
+}
+
+.reviews-item-link:hover .reviews-item-text:before,
+.reviews-item-link:hover .reviews-item-text:after {
+	text-shadow: none;
+}
+
+/*Feedback*/
+
+.feedback {
+	padding-bottom: 86px;
+}
+
+.feedback.mini {
+	display: none;
+}
+
+/*Map*/
+
+.map {
+	width: 100%;
+	height: 591px;
+}
+
+/*Breadcrumbs*/
+
+.breadcrumbs {
+	color: #fff;
+	padding: 30px 0 10px;
+}
+
+.breadcrumbs a {
+	padding-right: 10px;
+	text-decoration: none;
+	color: #ff962c;
+}
+
+.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+.breadcrumbs i {
+	padding-right: 10px;
+	font-size: 10px;
+}
+
+/*Content*/
+
+.content {
+	padding: 55px 0 80px;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+	font-weight: 700;
+	text-align: center;
+    color: #fff;
+	padding-bottom: 30px;
+}
+
+.content h1 {
+	font-size: 44px;
+    line-height: 43px;
+    text-transform: uppercase;
+    font-weight: 300;
+	padding-bottom: 126px;
+}
+
+.content h2 {
+	padding-top: 30px;
+	font-size: 32px;
+}
+
+.content h3 {
+	font-size: 25px;
+	padding-top: 30px;
+}
+
+.content h4 {
+	font-size: 20px;
+	padding-top: 30px;
+}
+
+.content img {
+	padding-bottom: 20px;
+}
+
+.content p {
+	padding-bottom: 20px;
+	line-height: 29px;
+}
+
+.content a {
+	color: #ff962c;
+	text-decoration: underline;
+}
+
+.content a:hover {
+	text-decoration: none;
+}
+
+.content ul, .content ol {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.content ul li {
+	display: list-item;
+	list-style-type: disc;
+}
+
+.content ol li {
+    display: list-item;
+    list-style-type: decimal;
+}
+
+.content table {
+	margin-bottom: 20px;
+	border-color: #eaeaea;
+}
+
+.content table th, .content table td {
+	padding: 10px;
+}
+
+.content table th {
+	font-weight: 700;
+	text-align: left;
+}
+
+@media screen and (max-width: 1350px) {
+	
+	/*Countries*/
+	
+	.countries-list {
+		padding: 0 0 75px;
+	}
+	
+	/*Reviews*/
+	
+	.reviews-list {
+		padding-bottom: 75px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	.section {
+		padding: 79px 0 105px;
+	}
+	
+	/*Titles*/
+	
+	.section-title {
+		padding-bottom: 81px;
+	}
+	
+	/*Search form*/
+	
+	.search-form {
+		position: unset;
+		transform: none;
+		padding-bottom: 105px;
+	}
+
+	.search-form .section-title {
+		display: block;
+		padding-bottom: 81px;
+	}
+	
+	/*Countries*/
+	
+	.countries {
+		width: calc(100% + 80px);
+		margin-left: -40px;
+	}
+	
+	.countries-list {
+		overflow: hidden;
+		margin-bottom: 73px;
+	}
+	
+	.countries-item-img {
+		margin: 0 auto 32px;
+	}
+	
+	.countries-item-text {
+		margin: 0 auto;
+	}
+	
+	/*Tours*/
+	
+	.tours {
+		display: none;
+	}
+	
+	/*Services*/
+	
+	.services.wrapper {
+		margin: 0;
+	}
+	
+	.services-list {
+		margin-bottom: -73px;
+	}
+	
+	.services-item {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		width: 100%;
+		max-width: 480px;
+		margin: 0 auto 73px;
+	}
+	
+	.services-item-img {
+		float: none;
+		max-width: 100%;
+		height: 334px;
+	}
+	
+	.services-item:nth-child(2n + 1) .services-item-img {
+		-webkit-box-ordinal-group: 1;
+			-ms-flex-order: 0;
+				order: 0;
+	}
+	
+	.services-item-desc {
+		float: none;
+		max-width: 100%;
+		padding: 47px 40px 0 60px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+	
+	.services-item:nth-child(2n + 1) .services-item-desc {
+		padding-left: 60px;
+	}
+	
+	/*Hot tours*/
+	
+	.hot.wrapper {
+		margin: 0;
+		padding-bottom: 0;
+	}
+	
+	/*Reviews*/
+	
+	.reviews.wrapper {
+		margin: 0;
+	}
+	
+	/*Feedback*/
+	
+	.feedback.full {
+		display: none;
+	}
+
+	.feedback.mini {
+		display: block;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	
+	/*Content*/
+	
+	.content h1 {
+		padding-bottom: 81px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	
+	/*Countries*/
+	
+	.countries {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
+}

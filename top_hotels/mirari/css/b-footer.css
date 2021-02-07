@@ -1,0 +1,140 @@
+
+.footer {
+	background: #28292c;
+	color: #fff;
+	font-size: 17px;
+	line-height: 32px;
+	padding-top: 81px;
+}
+
+.footer .wrapper {
+	max-width: 980px;
+}
+
+.footer .section-title {
+	padding-bottom: 100px;
+}
+
+/*Footer contacts*/
+
+.footer .contacts {
+	padding-bottom: 96px;
+	line-height: normal;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+}
+
+.footer .contacts-phones {
+	padding-bottom: 10px;
+}
+
+.footer .contacts-phone {
+	display: block;
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 900;
+	color: #ff962c;
+}
+
+.footer p {
+	padding-bottom: 10px;
+}
+
+.footer  .contacts-mail {
+	color: #fff;
+}
+
+.footer .contacts-phone:hover, .footer .contacts-mail:hover {
+	text-decoration: underline;
+}
+
+/*Social*/
+
+.social-list-item {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.social-list-item:last-child {
+	margin-right: 0;
+}
+
+.social-list-item-link {
+	display: block;
+	width: 60px;
+	height: 60px;
+	font-size: 25px;
+	line-height: 60px;
+	color: #28292c;
+	background: #37383b;
+	text-align: center;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.social-list-item:hover .social-list-item-link {
+	color: #28292c;
+	background: #ff962c;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+/*Copyright block*/
+
+.copyrights {
+	background: #37383b;
+	font-weight: 300;
+	text-align: center;
+	padding: 65px 0 78px;
+}
+
+.footer-copyright {
+	color: #fff;
+}
+
+.footer-developer a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footer-developer a:hover {
+	text-decoration: none;
+}
+
+.footer-counter {
+	padding-top: 10px;
+}
+	
+@media screen and (max-width: 1000px) {
+	
+	.footer .section-title {
+		padding-bottom: 87px;
+	}
+	
+	/*Footer contacts*/
+	
+	.footer .contacts {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		padding-left: 10px;
+		padding-bottom: 61px;
+	}
+
+	/*Social*/
+	
+	.footer .social {
+		margin-top: 44px;
+	}
+	
+	.footer .social-list {
+		text-align: center;
+	}
+}
