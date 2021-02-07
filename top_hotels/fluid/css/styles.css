@@ -1,0 +1,91 @@
+body {
+	font-family: 'ProximaNova-Regular', sans-serif;
+	font-size: 15px;
+}
+
+img {
+	max-width: 100%;
+}
+
+@font-face {
+	src: url('../fonts/ProximaNova-Regular.ttf');
+	font-family: 'ProximaNova-Regular';
+}
+
+@font-face {
+	src: url('../fonts/ProximaNova-Semibold.ttf');
+	font-family: 'ProximaNova-SemiBold';
+}
+
+@font-face {
+	src: url('../fonts/ProximaNova-Bold.ttf');
+	font-family: 'ProximaNova-Bold';
+}
+
+@font-face {
+	src: url('../fonts/ProximaNova-ExtraBold.ttf');
+	font-family: 'ProximaNova-ExtraBold';
+}
+
+@font-face {
+	src: url('../fonts/ProximaNova-Light.ttf');
+	font-family: 'ProximaNova-Light';
+}
+
+@font-face {
+	src: url('../fonts/ProximaNovaT-Thin.ttf');
+	font-family: 'ProximaNovaT-Thin';
+}
+
+@font-face {
+	src: url('../fonts/webfonts/fa-brands-400.ttf');
+	font-family: 'FontAwesome';
+}
+
+@font-face {
+	src: url('../fonts/FiraSansRegular.ttf');
+	font-family: 'FiraSansRegular';
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.wrapper {
+	max-width: 1194px;
+	margin: 0 auto;
+}
+
+.adaptive-only, .adaptive-only-480 {
+	display: none;
+}
+
+@media screen and (max-width: 1224px) {
+	.wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+}
+
+@media screen and (max-width: 1000px) {
+	.adaptive-only {
+		display: block;
+	}
+	
+	.no-adaptive {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.adaptive-only-480 {
+		display: block;
+	}
+	
+	.no-adaptive-480 {
+		display: none;
+	}
+}
