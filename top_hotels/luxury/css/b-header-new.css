@@ -1,0 +1,233 @@
+.header {
+	background: url(../img/header-bg.jpg) no-repeat center/cover;
+	background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4)),
+				url(../img/header-bg.jpg) no-repeat center/cover;
+	padding: 24px 0 20px;
+}
+
+/*Logo*/
+
+.logo-big {
+	float: left;
+	width: 130px;
+}
+
+/*Contacts*/
+
+.contacts {
+	float: right;
+	width: calc(100% - 130px);
+	padding-left: 20px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	position: relative;
+}
+
+.logo-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	position: relative;
+}
+
+.hashtag {
+	color: #fff;
+	position: absolute;
+	top: 93px;
+	left: 0;
+	font-size: 22px;
+}
+
+/*Social*/
+
+.header .social {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 33%;
+}
+
+.header .social-list-element {
+    display: inline-block;
+	width: 36px;
+	height: 36px;
+    font-size: 20px;
+	margin-right: 10px;
+}
+
+.header .social-list-element-link {
+	display: block;
+    color: #fff;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 50%;
+	background: #fff;
+	text-align: center;
+	border: 1px solid transparent;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.header .social-list-element-link--vk {
+    color: #597da3;
+}
+
+.header .social-list-element-link--in {
+    color: #833ab4;
+}
+
+.header .social-list-element-link--fb {
+    color: #3d5a98;
+}
+
+.header .social-list-element-link--vb {
+    color: #59267c;
+}
+
+.header .social-list-element-link:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.header .social-list-element-link--vk:hover {
+    background-color: #597da3;
+}
+
+.header .social-list-element-link--in:hover {
+    background-color: #833ab4;
+}
+
+.header .social-list-element-link--fb:hover {
+    background-color: #3d5a98;
+}
+
+.header .social-list-element-link--vb:hover {
+    background-color: #59267c;
+}
+
+/*Phones*/
+
+.contacts-block {
+/*	float: right;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	text-align: right;
+}
+
+.contacts-address {
+	color: #fff;
+}
+
+.contacts-phone {
+	font-family: 'TimesNewRoman';
+    font-size: 20px;
+	display: block;
+	color: #fff;
+}
+
+.contacts-phone:hover {
+    color: #fff;
+	text-decoration: underline;
+}
+
+/*Top menu*/
+
+.top-menu {
+	margin-top: 27px;
+}
+
+@media screen and (max-width: 1000px) {
+	
+	/*Contacts*/
+	
+	.logo-small {
+		display: block;
+		width: auto;
+		margin-bottom: 10px;
+	}
+	
+	.hashtag {
+		position: unset;
+		padding-top: 10px;
+	}
+	
+	/*Social*/
+	
+	.header .social {
+		width: auto;
+		text-align: left;
+		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+	
+	/*Phones*/
+	
+	.contacts-block {
+/*		float: none;*/
+		width: auto;
+		text-align: left;
+		position: absolute;
+		top: 0;
+		right: 50px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	
+	.contacts-block {
+		display: block;
+		position: unset;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.logo-big {
+		float: none;
+		margin-bottom: 20px;
+		width: 50px;
+	}
+	
+	/*Contacts*/
+	
+	.contacts {
+		width: 100%;
+		padding-left: 0;
+	}
+	
+	/*Social*/
+	
+	.header .social-list-element {
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
+	}
+	
+	.header .social-list-element-link {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 18px;
+	}
+	
+	/*Phones*/
+	
+	.contacts-block  {
+		float: none;
+	}
+
+	.contacts-phone {
+		font-size: 18px;
+		padding-top: 5px;
+	}
+	
+	/*Top menu*/
+	
+	.top-menu {
+		margin-top: 0;
+	}
+}

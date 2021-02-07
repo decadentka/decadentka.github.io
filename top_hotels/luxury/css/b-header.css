@@ -1,0 +1,143 @@
+.header {
+	display: block;
+	background: url('../images/upperline.jpg');
+	padding: 32px 0 35px;
+	position: relative;
+}
+
+/*Logo*/
+
+.logo {
+	display: inline-block;
+}
+
+/*Main menu*/
+
+.top-menu {
+	display: inline-block;
+	float: right;
+	margin-top: 53px;
+}
+
+#menu-btn {
+	display: none;
+}
+
+.top-menu label  {
+	display: none;
+}
+
+.top-menu .menu-list-element {
+	display: inline-block;
+	position: relative;
+	margin-left: 30px;
+}
+
+.top-menu .menu-list-element-link {
+	font-family: 'TimesNewRoman';
+	font-size: 18px;
+	color: #fff;
+	border-top: 4px solid transparent;
+	padding: 16px 0 10px;
+}
+
+.top-menu .menu-list-element--active .menu-list-element-link {
+	border-top: 4px solid #ffaa00;
+}
+
+.top-menu .menu-list-element-link:hover {
+	border-top: 4px solid #ffaa00;
+}
+
+@media screen and (min-width: 1000px) {
+	
+	/*Main menu*/
+	
+	.top-menu .submenu-list {
+		display: none;
+	}
+
+	.top-menu .menu-list-element:hover > .submenu-list {
+		display: block;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		background: #f04100;
+		padding: 10px 0;
+	}
+
+	.top-menu .submenu-list .menu-list-element {
+		display: block;
+		padding: 5px 10px;
+		margin: 0;
+	}
+	
+	.top-menu .submenu-list .menu-list-element:hover {
+		background: #ffaa00;
+	}
+
+	.top-menu .submenu-list .menu-list-element-link {
+		padding: 0;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	/*Main menu*/
+	
+	.top-menu {
+		display: inline-block;
+		margin-top: 0;
+		position: absolute;
+		top: 25px;
+		right: 20px;
+	}
+	
+	.top-menu-list-wrap {
+		display: none;
+	}
+	
+	.top-menu label {
+		display: block;
+		cursor: pointer;
+		text-align: right;
+	}
+	
+	#menu-btn:checked ~ .top-menu-list-wrap {
+		display: block;
+		max-width: 375px;
+		box-sizing: border-box;
+		padding: 15px 0;
+		background: #f04100;
+		margin-top: 10px;
+	}
+	
+	.label-menu-close {
+		display: none;
+	}
+	
+	#menu-btn:checked ~ .menu-btn .label-menu-bar {
+		display: none;
+	}
+	
+	#menu-btn:checked ~ .menu-btn .label-menu-close {
+		display: inline-block;
+	}
+	
+	.top-menu-list-wrap .menu-list-element {
+		display: block;
+		margin: 0 20px;
+		line-height: 30px;
+	}
+	
+	.top-menu-list-wrap .submenu-list .menu-list-element {
+		margin: 0 0 0 15px;
+	}
+	
+	.top-menu .menu-list-element-link, .top-menu .menu-list-element--active .menu-list-element-link {
+		border: none;
+		padding-top: 0;
+	}
+	
+}

@@ -1,0 +1,46 @@
+body {
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+}
+
+img {
+	max-width: 100%;
+}
+
+@font-face {
+	src: url('../fonts/TimesNewRoman/times.ttf');
+	font-family: 'TimesNewRoman';
+}
+
+@font-face {
+	src: url('../fonts/EseninScriptOne.ttf');
+	font-family: 'EseninScriptOne';
+}
+
+@font-face {
+	src: url('../fonts/webfonts/fa-brands-400.ttf');
+	font-family: 'FontAwesome';
+}
+
+@font-face {
+	src: url('../fonts/FiraSansRegular.ttf');
+	font-family: 'FiraSans-Regular';
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

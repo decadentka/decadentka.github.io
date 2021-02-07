@@ -1,0 +1,93 @@
+.footer {
+	display: block;
+	background: #161721;
+}
+
+.footer-bottom {
+	height: 80px;
+	padding: 25px 0;
+	box-sizing: border-box;
+	display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+	float: right;
+}
+
+.footer-copyright, .footer-developer {
+	font-size: 12px;
+	color: #717171;
+	display: inline-block;
+}
+
+.footer-copyright {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.footer-counter {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer-developer {
+	width: 165px;
+	text-decoration: underline;
+}
+
+/*Social*/
+
+.footer .social {
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.footer .social-list-element {
+	margin-right: 10px;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.footer .social-list-element-link {
+	color: #717171;
+}
+
+.footer .social-list-element-link--vk:hover {
+	color: #597da3;
+}
+
+.footer .social-list-element-link--tg:hover {
+	color: #0088cc;
+}
+
+.footer .social-list-element-link--in:hover {
+	color: #833ab4;
+}
+
+@media screen and (max-width: 1000px) {
+	
+	.footer-bottom {
+		height: auto;
+		display: block;
+	}
+	
+	.footer-info {
+		float: none;
+		text-align: center;
+	}
+	
+	.footer-copyright {
+		display: block;
+		padding: 0;
+		text-align: center;
+	}
+	
+	/*Social*/
+	
+	.footer .social {
+		display: block;
+		text-align: center;
+		margin: 20px 0;
+	}
+}
